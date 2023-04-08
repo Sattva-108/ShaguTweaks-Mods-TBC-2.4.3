@@ -4,22 +4,23 @@
 local module = ShaguTweaks:register({
     title = "Improved Interface Options",
     description = "Rescales the interface options menu and removes the background.",
-    expansions = { ["vanilla"] = true, ["tbc"] = nil },
+    expansions = { ["vanilla"] = true, ["tbc"] = true },
     category = nil,
     enabled = nil,
 })
   
 module.enable = function(self)
-    UIOptionsFrame:SetScript("OnShow", function()
+    InterfaceOptionsFrame:SetScript("OnShow", function()
         -- default events
-        UIOptionsFrame_Load();
+        -- UIOptionsFrame_Load();
+		-- InterfaceOptionsFrame_OnLoad (self)
         MultiActionBar_Update();
         MultiActionBar_ShowAllGrids();
         Disable_BagButtons();
         UpdateMicroButtons();
 
         -- customize
-        UIOptionsBlackground:Hide()
-        UIOptionsFrame:SetScale(.8)
+        -- UIOptionsBlackground:Hide()
+        InterfaceOptionsFrame:SetScale(1)
     end)
 end

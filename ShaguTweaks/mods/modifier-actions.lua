@@ -1,7 +1,7 @@
 local module = ShaguTweaks:register({
     title = "Modifier Actions",
-    description = "Use Ctrl (C), Alt (A) & Shift (S) for in game actions. S: Sell & Repair, A: Accept Release/Resurrect/Summon/Invite/Battleground, CA: Initiate/Accept Trade, CS: Follow, AS: Inspect, CAS: Logout.",
-    expansions = { ["vanilla"] = true, ["tbc"] = nil },
+    description = "Use Ctrl (C), Alt (A) & Shift (S) for in game actions. CAS: Logout, CA: Initiate/Accept Trade, CS: Follow, AS: Inspect, A: Release/Resurrect, S: Sell & Repair.",
+    expansions = { ["vanilla"] = true, ["tbc"] = true },
     category = nil,
     enabled = nil,
 })
@@ -148,35 +148,13 @@ module.enable = function(self)
     end
 
     function actions:Resurrect()
-        if UnitIsDeadOrGhost("player") then
+        if actions.resurrect and UnitIsDeadOrGhost("player") then
+            actions.resurrect = nil
             AcceptResurrect()
         elseif UnitIsGhost("player") then
             RetrieveCorpse()
         elseif UnitIsDead("player") then
             RepopMe()        
-        end
-        StaticPopup_Hide("RESURRECT_NO_TIMER")
-        StaticPopup_Hide("RESURRECT_NO_SICKNESS")
-        StaticPopup_Hide("RESURRECT")
-    end
-
-    function actions:Summon()
-        ConfirmSummon()
-        StaticPopup_Hide("CONFIRM_SUMMON")
-    end
-
-    function actions:Group()
-        AcceptGroup()
-        StaticPopup_Hide("PARTY_INVITE")
-    end
-
-    function actions:Battleground()
-        for i=1, MAX_BATTLEFIELD_QUEUES do
-            status, mapName, instanceID = GetBattlefieldStatus(i)
-            if status == "confirm" then
-                AcceptBattlefieldPort(i,1)
-                StaticPopup_Hide("CONFIRM_BATTLEFIELD_ENTRY")
-            end
         end
     end
 
@@ -220,7 +198,7 @@ module.enable = function(self)
     actions:RegisterEvent("TRADE_SHOW")
     actions:RegisterEvent("TRADE_CLOSED")
     actions:RegisterEvent("MERCHANT_SHOW")
-    actions:RegisterEvent("MERCHANT_CLOSED")
+    actions:RegisterEvent("MERCHANT_CLOSED")    
 
     actions:SetScript("OnEvent", function() 
         if (event == "TRADE_SHOW") then
@@ -233,6 +211,8 @@ module.enable = function(self)
         elseif (event == "MERCHANT_CLOSED") then
             actions.merchant = nil
             autovendor:Hide()
+        elseif (event == "RESURRECT_REQUEST") then
+            actions.resurrect = true
         end
     end)
     
@@ -253,9 +233,6 @@ module.enable = function(self)
             actions:Inspect()
         elseif (actions.alt) then
             actions:Resurrect()
-            actions:Summon()
-            actions:Group()
-            actions:Battleground()
         elseif (actions.shift) then
             actions:Merchant()
         end

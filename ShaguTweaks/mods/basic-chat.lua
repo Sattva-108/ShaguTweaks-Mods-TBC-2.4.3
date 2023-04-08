@@ -1,7 +1,7 @@
 local module = ShaguTweaks:register({
     title = "Basic Chat",
     description = "Creates General, Combat Log and 'Loot & Spam' chat boxes and resets chat channels on every login.",
-    expansions = { ["vanilla"] = true, ["tbc"] = nil },
+    expansions = { ["vanilla"] = true, ["tbc"] = true },
     category = "Social & Chat",
     enabled = nil,
 })

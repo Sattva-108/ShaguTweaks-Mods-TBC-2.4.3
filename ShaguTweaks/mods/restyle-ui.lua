@@ -1,7 +1,7 @@
 local module = ShaguTweaks:register({
     title = "Restyle UI",
-    description = "Restyles supported addons and the minimap. Changes fonts for units, buffs, buttons & chat.",
-    expansions = { ["vanilla"] = true, ["tbc"] = nil },
+    description = "Restyles supported addons, buffs, buttons, minimap and unit names.",
+    expansions = { ["vanilla"] = true, ["tbc"] = true },
     category = nil,
     enabled = nil,
 })
@@ -12,132 +12,28 @@ module.enable = function(self)
     local function addons()
         --[[
             Supported Addons:
-            SP_SwingTimer (Vanilla/Turtle),
-            MinimapButtonBag (Vanilla/Turtle)
+            SP_SwingTimer
         ]]
 
-        local function lock(frame)
-            frame.ClearAllPoints = function() end
-            frame.SetAllPoints = function() end
-            frame.SetPoint = function() end         
-        end
+        if IsAddOnLoaded("SP_SwingTimer") then
+            local o,e,i = 2,10,4
+            local f = CreateFrame("Frame", nil, SP_ST_Frame)
+            f:SetPoint("TOPLEFT", f:GetParent(), "TOPLEFT", -o, o)
+            f:SetPoint("BOTTOMRIGHT", f:GetParent(), "BOTTOMRIGHT", o, -o)
+            f:SetBackdrop({
+                edgeFile = "Interface/Tooltips/UI-Tooltip-Border",
+                edgeSize = e,
+                insets = { left = i, right = i, top = i, bottom = i },
+            })
 
-        -- SP_SwingTimer
-        if IsAddOnLoaded("SP_SwingTimer") and (not IsAddOnLoaded("GryllsSwingTimer")) then
-            -- local w, h, b = 200, 14, 6
-            local h, b = 14, 6
-            -- set mainhand
-            -- SP_ST_Frame:SetWidth(w)
-            SP_ST_Frame:SetHeight(h)
-            -- SP_ST_Frame:SetScale(1)
-            -- SP_ST_Frame:SetAlpha(1)
-            -- -- set oh
-            -- SP_ST_FrameOFF:SetWidth(w)
-            SP_ST_FrameOFF:SetHeight(h)
-            -- SP_ST_FrameOFF:SetScale(1)
-            -- SP_ST_FrameOFF:SetAlpha(1)
-            -- set position
-            SP_ST_Frame:ClearAllPoints()
-            SP_ST_FrameOFF:ClearAllPoints()
-
-            SP_ST_Frame:SetPoint("CENTER", 0, -250)
-            SP_ST_FrameOFF:SetPoint("TOP", "SP_ST_Frame", "BOTTOM", 0, -4);
-
-            SP_ST_FrameTime:ClearAllPoints()
-	        SP_ST_FrameTime2:ClearAllPoints()            
-            
-            SP_ST_FrameTime:SetPoint("CENTER", "SP_ST_Frame", "CENTER")
-		    SP_ST_FrameTime2:SetPoint("CENTER", "SP_ST_FrameOFF", "CENTER")
-            -- set time
-            -- SP_ST_FrameTime:SetWidth(w)
-            SP_ST_FrameTime:SetHeight(h-b)
-
-            -- SP_ST_FrameTime2:SetWidth(w)
-            SP_ST_FrameTime2:SetHeight(h-b)
-            -- hide icons
-            SP_ST_mainhand:SetTexture(nil)
-            SP_ST_mainhand:SetWidth(0)
-
-            SP_ST_offhand:SetTexture(nil)
-            SP_ST_offhand:SetWidth(0)
-
-            SP_ST_mainhand:Hide()
-            SP_ST_offhand:Hide()
-            -- hide timers
-            SP_ST_maintimer:Hide()
-            SP_ST_offtimer:Hide()
-            -- hide oh
-            SP_ST_FrameOFF:Hide()
-            SP_ST_FrameTime2:Hide()
-
-            -- add borders
-            local function addBorder(frame)
-                local x, y, e, i = 4, 2, h, 4
-                f = CreateFrame("Frame", nil, frame)
-                f:SetPoint("TOPLEFT", f:GetParent(), "TOPLEFT", -x, y)
-                f:SetPoint("BOTTOMRIGHT", f:GetParent(), "BOTTOMRIGHT", x, -y)
-                
-                f:SetBackdrop({
-                    edgeFile = "Interface/Tooltips/UI-Tooltip-Border",
-                    -- edgeFile = "Interface/DialogFrame/UI-DialogBox-Border",
-                    edgeSize = e,
-                    insets = { left = i, right = i, top = i, bottom = i },
-                })
-
-                local r, g, b, a = .7, .7, .7, .9
-                f:SetBackdropBorderColor(r, g, b, a)
-            end           
-            
-            addBorder(SP_ST_Frame)
-            addBorder(SP_ST_FrameOFF)            
-        end
-
-        -- MinimapButtonFrame    
-        if MBB_MinimapButtonFrame then
-            -- reposition MBB to the bottom of the styleFrame (under the minimap)
-            -- show the button OnEnter and hide when OnLeave
-            
-            if IsAddOnLoaded("MinimapButtonBag-TurtleWoW") then
-                MBB_MinimapButtonFrame_Texture:SetTexture("Interface\\Icons\\Inv_misc_bag_10_green")
-            else
-                MBB_MinimapButtonFrame_Texture:SetTexture("Interface\\Icons\\Inv_misc_bag_10")
-            end            
-
-            MBB_MinimapButtonFrame:ClearAllPoints()
-            MBB_MinimapButtonFrame:SetPoint("CENTER", Minimap, "BOTTOMLEFT", 0, 0)
-            lock(MBB_MinimapButtonFrame)           
-            
-            local function showButton(button)
-                button:SetAlpha(1)
-            end
-
-            local function hideButton(button)
-                button:SetAlpha(0)  
-            end            
-
-            hideButton(MBB_MinimapButtonFrame)
-            local hide = CreateFrame("BUTTON", nil, MBB_MinimapButtonFrame)
-            hide:SetAllPoints(hide:GetParent())
-
-            hide:SetScript("OnEnter", function()
-                showButton(MBB_MinimapButtonFrame)
-            end)
-
-            hide:SetScript("OnLeave", function()
-                hide.timer = GetTime() + 6
-                hide:SetScript("OnUpdate", function()            
-                    if (GetTime() > hide.timer) then
-                        MBB_HideButtons() -- MBB function to hide buttons
-                        hideButton(MBB_MinimapButtonFrame)
-                        hide:SetScript("OnUpdate", nil)
-                    end
-                end)
-            end)
-            
-            hide:RegisterForClicks("LeftButtonDown","RightButtonDown")
-            hide:SetScript("OnClick", function()
-                MBB_OnClick(arg1)
-            end)
+            local f = CreateFrame("Frame", nil, SP_ST_FrameOFF)
+            f:SetPoint("TOPLEFT", f:GetParent(), "TOPLEFT", -o, o)
+            f:SetPoint("BOTTOMRIGHT", f:GetParent(), "BOTTOMRIGHT", o, -o)
+            f:SetBackdrop({
+                edgeFile = "Interface/Tooltips/UI-Tooltip-Border",
+                edgeSize = e,
+                insets = { left = i, right = i, top = i, bottom = i },
+            })
         end
     end
 
@@ -267,17 +163,28 @@ module.enable = function(self)
         MinimapZoneText:SetFont("Fonts\\skurri.TTF", 14, "OUTLINE")
         MinimapZoneText:SetDrawLayer("OVERLAY", 7)        
         MinimapZoneText:SetParent(styleFrame)
+		
+		
+        local function removeBackdrop(frame)
+            frame:SetBackdropBorderColor(0,0,0,0)
+            frame:SetBackdropColor(0,0,0,0)
+        end
 
-        -- local function removeBackdrop(frame)
-        --     frame:SetBackdropBorderColor(0,0,0,0)
-        --     frame:SetBackdropColor(0,0,0,0)
-        -- end        
+        local function lock(frame)
+            frame.ClearAllPoints = function() end
+            frame.SetAllPoints = function() end
+            frame.SetPoint = function() end
+            -- frame.SetWidth = function() end
+            -- feame.SetHeight = function() end
+            -- feame.SetScale = function() end            
+        end
 
         -- ShaguTweaks clock
         if MinimapClock then
             -- removeBackdrop(MinimapClock)
             MinimapClock:ClearAllPoints()
             MinimapClock:SetPoint("CENTER", styleFrame, "CENTER", -1, 0)
+            -- lock(MinimapClock)
         end
 
         -- ShaguTweaks-Mods timer
@@ -303,12 +210,16 @@ module.enable = function(self)
 
         if Minimap.border then -- if using square minimap
             -- Tracking
-            MiniMapTrackingFrame:ClearAllPoints()
-            MiniMapTrackingFrame:SetPoint("TOPLEFT", Minimap, "TOPLEFT", -2, 1)
-            MiniMapTrackingFrame:SetScale(0.9)
-            MiniMapTrackingBorder:SetTexture(nil)
-
-            -- Mail
+           --  MiniMapTracking:ClearAllPoints()
+           -- MiniMapTracking:SetPoint("TOPLEFT", Minimap, "TOPLEFT", -2, 1)
+           -- MiniMapTracking:SetScale(0.9)
+           -- MiniMapTrackingBorder:SetTexture(nil)
+			MiniMapWorldMapButton:Hide()
+            MinimapToggleButton:Hide()
+			MinimapZoneTextButton:Hide()
+			MinimapBorderTop:Hide()
+			
+			-- Mail
             MiniMapMailFrame:ClearAllPoints()
             MiniMapMailFrame:SetPoint("TOPRIGHT", Minimap, "TOPRIGHT", 4, 2)
             MiniMapMailFrame:SetScale(1.2)
@@ -317,7 +228,55 @@ module.enable = function(self)
             -- PVP
             MiniMapBattlefieldFrame:ClearAllPoints()
             MiniMapBattlefieldFrame:SetPoint("BOTTOMLEFT", Minimap, "BOTTOMLEFT", 2, 8)
-        end        
+        end
+
+        -- MinimapButtonFrame    
+        if MBB_MinimapButtonFrame then
+            -- reposition MBB to the bottom of the styleFrame (under the minimap)
+            -- show the button OnEnter and hide when OnLeave
+            
+            if IsAddOnLoaded("MinimapButtonBag-TurtleWoW") then
+                MBB_MinimapButtonFrame_Texture:SetTexture("Interface\\Icons\\Inv_misc_bag_10_green")
+            else
+                MBB_MinimapButtonFrame_Texture:SetTexture("Interface\\Icons\\Inv_misc_bag_10")
+            end            
+
+            MBB_MinimapButtonFrame:ClearAllPoints()
+            MBB_MinimapButtonFrame:SetPoint("CENTER", Minimap, "BOTTOMLEFT", 0, 0)
+            lock(MBB_MinimapButtonFrame)           
+            
+            local function showButton(button)
+                button:SetAlpha(1)
+            end
+
+            local function hideButton(button)
+                button:SetAlpha(0)  
+            end            
+
+            hideButton(MBB_MinimapButtonFrame)
+            local hide = CreateFrame("BUTTON", nil, MBB_MinimapButtonFrame)
+            hide:SetAllPoints(hide:GetParent())
+
+            hide:SetScript("OnEnter", function()
+                showButton(MBB_MinimapButtonFrame)
+            end)
+
+            hide:SetScript("OnLeave", function()
+                hide.timer = GetTime() + 6
+                hide:SetScript("OnUpdate", function()            
+                    if (GetTime() > hide.timer) then
+                        MBB_HideButtons() -- MBB function to hide buttons
+                        hideButton(MBB_MinimapButtonFrame)
+                        hide:SetScript("OnUpdate", nil)
+                    end
+                end)
+            end)
+            
+            hide:RegisterForClicks("LeftButtonDown","RightButtonDown")
+            hide:SetScript("OnClick", function()
+                MBB_OnClick(arg1)
+            end)
+        end
     end
 
     local function names()
@@ -340,25 +299,14 @@ module.enable = function(self)
         nameFont(PartyMemberFrame4PetFrame.name)
     end
 
-    local function font()
-        local chatframes = { ChatFrame1, ChatFrame2, ChatFrame3 }
-
-        for _, chatframe in pairs(chatframes) do
-            local font = "Fonts\\frizqt__.TTF"
-            local _, size, outline = chatframe:GetFont()
-            chatframe:SetFont(font, size, outline)
-        end
-    end
-
     local events = CreateFrame("Frame", nil, UIParent)	
     events:RegisterEvent("PLAYER_ENTERING_WORLD")
 
-    events:SetScript("OnEvent", function()        
+    events:SetScript("OnEvent", function()
+        addons()
         buffs()
         buttons()
         minimap()
         names()
-        font()
-        addons()
     end)
 end

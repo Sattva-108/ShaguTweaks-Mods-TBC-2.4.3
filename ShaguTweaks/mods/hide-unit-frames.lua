@@ -1,9 +1,7 @@
-local _G = ShaguTweaks.GetGlobalEnv()
-
 local module = ShaguTweaks:register({
     title = "Hide Unit Frames",
-    description = "Hide the player and pet frame if full health & mana, happy, no target and out of combat. Show on mouseover.",
-    expansions = { ["vanilla"] = true, ["tbc"] = nil },
+    description = "Hide the player and pet frame if full health & mana, happy, no target and out of combat.",
+    expansions = { ["vanilla"] = true, ["tbc"] = true },
     category = "Unit Frames",
     enabled = nil,
 })
@@ -65,33 +63,7 @@ module.enable = function(self)
         else
             ShowFrames()
         end
-    end
-
-    local function overlay(parent)
-        local f = CreateFrame("Button")
-        f:SetAllPoints(parent)
-        f:EnableMouse(true)
-        f:RegisterForClicks('LeftButtonUp', 'RightButtonUp',
-        'MiddleButtonUp', 'Button4Up', 'Button5Up')
-
-        f:SetScript("OnEnter", function()
-            parent:Show()
-        end)
-
-        f:SetScript("OnLeave", function()
-            this:Show()
-            CheckConditions()       
-        end)
-
-        f:SetScript("OnClick", function()
-            this:Hide()
-            _G[parent:GetName().."_OnClick"](arg1)
-        end)
-    end
-
-    for _, frame in pairs(frames) do
-        overlay(frame)
-    end
+    end    
 
     local events = CreateFrame("Frame", nil, UIParent)	
     events:RegisterEvent("PLAYER_ENTERING_WORLD")

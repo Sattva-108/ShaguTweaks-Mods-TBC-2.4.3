@@ -1,7 +1,7 @@
 local module = ShaguTweaks:register({
     title = "Unit Frame Energy & Mana Tick",
     description = "Adds an energy & mana tick to the player frame.",
-    expansions = { ["vanilla"] = true, ["tbc"] = nil },
+    expansions = { ["vanilla"] = true, ["tbc"] = true },
     category = "Unit Frames",
     enabled = nil,
   })

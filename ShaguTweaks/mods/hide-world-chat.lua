@@ -5,7 +5,7 @@ local ChatFrameLeftWorld
 local module = ShaguTweaks:register({
     title = "World Chat Hider",
     description = "Looks for world chat in the chat frames and hides it while in an instance.",
-    expansions = { ["vanilla"] = true, ["tbc"] = nil },
+    expansions = { ["vanilla"] = true, ["tbc"] = true },
     category = "Social & Chat",
     enabled = nil,
 })

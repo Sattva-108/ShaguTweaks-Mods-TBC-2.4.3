@@ -1,7 +1,7 @@
 local module = ShaguTweaks:register({
     title = "Mouseover Bottom Right",
     description = "Hide the Bottom Right ActionBar and show on mouseover. The pet/shapeshift/aura/stance bars will not be clickable if in the same position as the mouseover bar.",
-    expansions = { ["vanilla"] = true, ["tbc"] = nil },
+    expansions = { ["vanilla"] = true, ["tbc"] = true },
     category = "Action Bar",
     enabled = nil,
 })

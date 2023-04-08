@@ -6,7 +6,7 @@ local strsplit = ShaguTweaks.strsplit
 local module = ShaguTweaks:register({
     title = "Chat Tweaks Extended",
     description = 'Extends "Chat Tweaks". Removes chat buttons, shortens channel names, shows item links on mouseover, adds Alt click chat names to invite and Ctrl click chat names to target.',
-    expansions = { ["vanilla"] = true, ["tbc"] = nil },
+    expansions = { ["vanilla"] = true, ["tbc"] = true },
     category = "Social & Chat",
     enabled = nil,
 })

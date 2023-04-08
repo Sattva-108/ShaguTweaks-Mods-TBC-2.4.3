@@ -4,7 +4,7 @@ local hooksecurefunc = ShaguTweaks.hooksecurefunc
 local module = ShaguTweaks:register({
   title = "Unit Frame Healthbar Colors",
   description = "Changes the unitframe and nameplate healthbar color when at 20% health or lower.",
-  expansions = { ["vanilla"] = true, ["tbc"] = nil },
+  expansions = { ["vanilla"] = true, ["tbc"] = true },
   category = "Unit Frames",
   enabled = nil,
 })
@@ -53,8 +53,6 @@ module.enable = function(self)
         else
           statusbar:SetStatusBarColor(255/255, 128/255, 0/255)
         end
-      else
-        statusbar:SetStatusBarColor(0, 1, 0)
       end
     end
   end, true)

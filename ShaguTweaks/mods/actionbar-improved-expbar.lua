@@ -1,12 +1,13 @@
 local module = ShaguTweaks:register({
     title = "Improved Exp Bar",
     description = "Improved exp information on mouseover. Shows rested percent while resting and changes color when fully rested.",
-    expansions = { ["vanilla"] = true, ["tbc"] = nil },
+    expansions = { ["vanilla"] = true, ["tbc"] = true },
     category = "Action Bar",
     enabled = nil,
 })
 
-module.enable = function(self)    
+module.enable = function(self)
+    
     local exp = CreateFrame("Frame", "exp", UIParent)
     exp:SetFrameStrata("HIGH")
     local font, size, outline = "Fonts\\frizqt__.TTF", 12, "OUTLINE"
@@ -23,15 +24,7 @@ module.enable = function(self)
     exp.repstring:SetPoint("CENTER", ReputationWatchBar, "CENTER", 0, 2)
     exp.repstring:SetJustifyH("CENTER")
     exp.repstring:SetTextColor(1,1,1)
-
-    local expArt = {
-        ExhaustionTick, 
-        MainMenuXPBarTexture0, MainMenuXPBarTexture1, MainMenuXPBarTexture2, MainMenuXPBarTexture3, 
-        ReputationWatchBarTexture0, ReputationWatchBarTexture1, ReputationWatchBarTexture2, ReputationWatchBarTexture3
-    }
     
-    local isMousing
-
     local function updateExp(mouseover)
         local playerlevel = UnitLevel("player")
         local xp, xpmax, exh = UnitXP("player"), UnitXPMax("player"), GetXPExhaustion() or 0
@@ -42,19 +35,9 @@ module.enable = function(self)
         exh = ShaguTweaks.Abbreviate(exh, 1)
         remaining = ShaguTweaks.Abbreviate(remaining, 1)
 
-        if playerlevel < 60 then
-            if (not mouseover) then              
-                if IsResting() then                    
-                    if exh_perc > 0 then
-                        exp.expstring:SetText(exh .. " (" .. exh_perc.."%) rested")
-                    end
-                elseif (TargetHPText or TargetHPPercText) then -- Turtle WoW
-                    if exh_perc > 0 then
-                        exp.expstring:SetText(exh_perc.."% rested")
-                    end
-                else
-                    exp.expstring:SetText("")
-                end
+        if playerlevel < 60 then            
+            if IsResting() and (not mouseover) then
+                exp.expstring:SetText(exh_perc.."% rested")
             else
                 if (exh == 0) then
                     exp.expstring:SetText("Level "..playerlevel.." - "..remaining.." ("..remaining_perc.."%) remaining")            
@@ -64,7 +47,7 @@ module.enable = function(self)
             end
         end
 
-        local rested = GetRestState()
+        local rested  = GetRestState()
 		if (rested == 1) then
             if (exh_perc == 150) then
                 MainMenuExpBar:SetStatusBarColor(0, 1, 0.6, 1)
@@ -73,7 +56,8 @@ module.enable = function(self)
             end
 		elseif (rested == 2) then
 			MainMenuExpBar:SetStatusBarColor(0.58, 0.0, 0.55, 1.0)
-        end        
+        end
+        
     end
     
     local function updateRep()
@@ -93,26 +77,18 @@ module.enable = function(self)
         else
             exp.repstring:SetText("")
         end
-    end
-
+    end    
+    
     local function expShow()
-        isMousing = true
-        updateExp(isMousing)
+        updateExp(true)
         exp.expstring:Show()
-        for _, element in pairs(expArt) do
-            element:SetAlpha(0.25)
-        end
     end
     
     local function expHide()
-        isMousing = nil
-        if (not IsResting()) and (not (TargetHPText or TargetHPPercText)) then
+        if not IsResting() then
             exp.expstring:Hide()
         else
-            updateExp(isMousing)
-        end
-        for _, element in pairs(expArt) do
-            element:SetAlpha(1)
+            updateExp(false)
         end
     end
     
@@ -126,20 +102,12 @@ module.enable = function(self)
     end
     
     local function repShow()
-        isMousing = true
         updateRep()
         exp.repstring:Show()
-        for _, element in pairs(expArt) do
-            element:SetAlpha(0.25)
-        end
     end
     
     local function repHide()
-        isMousing = nil
         exp.repstring:Hide()
-        for _, element in pairs(expArt) do
-            element:SetAlpha(1)
-        end
     end
     
     local function mouseoverRep()
@@ -153,7 +121,7 @@ module.enable = function(self)
 
     local function updateResting()
         if IsResting() then
-            updateExp(isMousing)
+            updateExp(false)
             exp.expstring:Show()
         else
             expHide()
@@ -172,19 +140,14 @@ module.enable = function(self)
             MainMenuBarOverlayFrame:Hide()       
             mouseoverExp()
             mouseoverRep()            
-            updateExp(isMousing)
+            updateExp()
             updateRep()
             expHide()
             repHide()
-            
-            -- Always show rested % for Turtle WoW
-            if (TargetHPText or TargetHPPercText) then
-                exp.expstring:Show()
-            end
         elseif event == "PLAYER_UPDATE_RESTING" then
             updateResting()
         else
-            updateExp(isMousing)
+            updateExp()       
         end
     end)
 end

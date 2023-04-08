@@ -4,7 +4,7 @@ local hooksecurefunc = ShaguTweaks.hooksecurefunc
 local module = ShaguTweaks:register({
     title = "Quick Actions",
     description = "Action buttons will be activated on key down.",
-    expansions = { ["vanilla"] = true, ["tbc"] = nil },
+    expansions = { ["vanilla"] = true, ["tbc"] = true },
     category = "Action Bar",
     enabled = nil,
 })

@@ -1,7 +1,7 @@
 local module = ShaguTweaks:register({
     title = "Hide Macro Text",
     description = "Hides macro text",
-    expansions = { ["vanilla"] = true, ["tbc"] = nil },
+    expansions = { ["vanilla"] = true, ["tbc"] = true },
     category = "Action Bar",
     enabled = nil,
 })

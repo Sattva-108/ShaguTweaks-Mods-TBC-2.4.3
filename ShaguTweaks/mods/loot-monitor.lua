@@ -1,7 +1,7 @@
 local module = ShaguTweaks:register({
     title = "Loot Monitor",
     description = "Display recent loot text in a central scrolling window. Hold Alt or Alt+Shift to scroll. Hold Alt+Ctrl while scrolling to filter by quality.",
-    expansions = { ["vanilla"] = true, ["tbc"] = nil },
+    expansions = { ["vanilla"] = true, ["tbc"] = true },
     category = nil,
     enabled = nil,
 })

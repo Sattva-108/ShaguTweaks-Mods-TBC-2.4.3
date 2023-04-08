@@ -1,7 +1,7 @@
 local module = ShaguTweaks:register({
     title = "Unit Frame Combat Indicator",
     description = "Adds a combat indicator to the target frame",
-    expansions = { ["vanilla"] = true, ["tbc"] = nil },
+    expansions = { ["vanilla"] = true, ["tbc"] = true },
     category = "Unit Frames",
     enabled = nil,
 })

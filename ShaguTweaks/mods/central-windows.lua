@@ -3,7 +3,7 @@ local hooksecurefunc = ShaguTweaks.hooksecurefunc
 local module = ShaguTweaks:register({
     title = "Central Interaction Windows",
     description = "Interaction windows will be positioned centrally.",
-    expansions = { ["vanilla"] = true, ["tbc"] = nil },
+    expansions = { ["vanilla"] = true, ["tbc"] = true },
     category = nil,
     enabled = nil,
 })

@@ -4,7 +4,7 @@ local libspell = ShaguTweaks.libspell
 local module = ShaguTweaks:register({
     title = "Macro Icons & Cooldowns",
     description = "Show macro icons & cooldowns on the action bars.",
-    expansions = { ["vanilla"] = true, ["tbc"] = nil },
+    expansions = { ["vanilla"] = true, ["tbc"] = true },
     category = "Action Bar",
     enabled = nil,
 })

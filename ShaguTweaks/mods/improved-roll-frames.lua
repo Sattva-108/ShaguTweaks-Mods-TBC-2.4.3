@@ -1,7 +1,7 @@
 local module = ShaguTweaks:register({
     title = "Improved Roll Frames",
     description = "Smaller roll frames with roll tracking.",
-    expansions = { ["vanilla"] = true, ["tbc"] = nil },
+    expansions = { ["vanilla"] = true, ["tbc"] = true },
     category = nil,
     enabled = nil,
   })

@@ -4,12 +4,12 @@ local hooksecurefunc = ShaguTweaks.hooksecurefunc
 local module = ShaguTweaks:register({
     title = "Range Color",
     description = "Action buttons will be colored red when out of range.",
-    expansions = { ["vanilla"] = true, ["tbc"] = nil },
+    expansions = { ["vanilla"] = true, ["tbc"] = true },
     category = "Action Bar",
     enabled = nil,
 })
 
-module.enable = function(self)    
+module.enable = function(self)
     hooksecurefunc("ActionButton_OnUpdate", function(elapsed)
         -- Button color based on range
         if ( this.rangeTimer ) then
@@ -26,5 +26,5 @@ module.enable = function(self)
                     this.rangeTimer = TOOLTIP_UPDATE_TIME
                 end
             end
-    end, true)
+        end)
 end

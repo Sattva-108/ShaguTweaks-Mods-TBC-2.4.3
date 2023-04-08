@@ -1,7 +1,7 @@
 local module = ShaguTweaks:register({
   title = "Hide Combat Tooltip",
   description = "Hides the tooltip while in combat. While in combat, holding shift will show the tooltip.",
-  expansions = { ["vanilla"] = true, ["tbc"] = nil },
+  expansions = { ["vanilla"] = true, ["tbc"] = true },
   category = "Tooltip & Items",
   enabled = nil,
 })

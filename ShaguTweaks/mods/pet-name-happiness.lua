@@ -3,7 +3,7 @@ local hooksecurefunc = ShaguTweaks.hooksecurefunc
 local module = ShaguTweaks:register({
   title = "Pet Name Happiness",
   description = "Colors Hunter pet name by happiness level.",
-  expansions = { ["vanilla"] = true, ["tbc"] = nil },
+  expansions = { ["vanilla"] = true, ["tbc"] = true },
   category = "Unit Frames",
   enabled = nil,
 })
