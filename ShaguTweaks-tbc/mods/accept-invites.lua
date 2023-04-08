@@ -1,7 +1,7 @@
 local module = ShaguTweaks:register({
     title = "Accept Group Invites",
     description = "Accept group invites from friends and guildies.",
-    expansions = { ["vanilla"] = true, ["tbc"] = true },
+    expansions = { ["vanilla"] = true, ["tbc"] = nil },
     category = nil,
     enabled = nil,
 })
