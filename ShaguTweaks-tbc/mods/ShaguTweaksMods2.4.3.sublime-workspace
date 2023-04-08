@@ -1,0 +1,3430 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"po",
+				"podarokbumaga"
+			],
+			[
+				"BOTT",
+				"BOTTOM"
+			],
+			[
+				"BO",
+				"BOTTOM"
+			],
+			[
+				"World",
+				"WorldMapFrame"
+			],
+			[
+				"SpeedrunSp",
+				"SpeedrunSplits"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "minimap-timer.lua",
+			"settings":
+			{
+				"buffer_size": 3810,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "minimap-tweaks.lua",
+			"settings":
+			{
+				"buffer_size": 842,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "modifier-actions.lua",
+			"settings":
+			{
+				"buffer_size": 7657,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "move-unitframes.lua",
+			"settings":
+			{
+				"buffer_size": 2693,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "mouseover.lua",
+			"settings":
+			{
+				"buffer_size": 3576,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "nameplate-classcolor.lua",
+			"settings":
+			{
+				"buffer_size": 733,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "nameplate-scale.lua",
+			"settings":
+			{
+				"buffer_size": 1404,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "move-unitframes-extended.lua",
+			"settings":
+			{
+				"buffer_size": 5006,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "reduced-actionbar.lua",
+			"settings":
+			{
+				"buffer_size": 5461,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "restyle-ui.lua",
+			"settings":
+			{
+				"buffer_size": 10577,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "sell-junk.lua",
+			"settings":
+			{
+				"buffer_size": 5123,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "skip-gossip.lua",
+			"settings":
+			{
+				"buffer_size": 2410,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "smaller-errors-frame.lua",
+			"settings":
+			{
+				"buffer_size": 307,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "social-colors.lua",
+			"settings":
+			{
+				"buffer_size": 8705,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "target-castbar.lua",
+			"settings":
+			{
+				"buffer_size": 3925,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "target-debufftimer.lua",
+			"settings":
+			{
+				"buffer_size": 2619,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "tooltip-details.lua",
+			"settings":
+			{
+				"buffer_size": 6288,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "turtle-health.lua",
+			"settings":
+			{
+				"buffer_size": 1867,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "unitframes-bighealth.lua",
+			"settings":
+			{
+				"buffer_size": 3949,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "unitframes-classcolor.lua",
+			"settings":
+			{
+				"buffer_size": 2751,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "unitframes-classportrait.lua",
+			"settings":
+			{
+				"buffer_size": 2473,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "unitframes-combat-indicator.lua",
+			"settings":
+			{
+				"buffer_size": 2128,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "unitframes-energy-tick.lua",
+			"settings":
+			{
+				"buffer_size": 2894,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "unitframes-healthbar-color.lua",
+			"settings":
+			{
+				"buffer_size": 1938,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "unitframes-whitemana.lua",
+			"settings":
+			{
+				"buffer_size": 674,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "vendor-values.lua",
+			"settings":
+			{
+				"buffer_size": 330244,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "worldmap-colors.lua",
+			"settings":
+			{
+				"buffer_size": 3092,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "worldmap-coordinates.lua",
+			"settings":
+			{
+				"buffer_size": 2785,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "worldmap-reveal.lua",
+			"settings":
+			{
+				"buffer_size": 26368,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "worldmap-window.lua",
+			"settings":
+			{
+				"buffer_size": 2104,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "accept-invites.lua",
+			"settings":
+			{
+				"buffer_size": 1053,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "actionbar-hide-hotkey.lua",
+			"settings":
+			{
+				"buffer_size": 1283,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "actionbar-hide-macro.lua",
+			"settings":
+			{
+				"buffer_size": 1031,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "actionbar-improved-expbar.lua",
+			"settings":
+			{
+				"buffer_size": 5384,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "actionbar-macros.lua",
+			"settings":
+			{
+				"buffer_size": 5161,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "actionbar-mouseover-bar-bottomleft.lua",
+			"settings":
+			{
+				"buffer_size": 7425,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "actionbar-mouseover-bar-bottomright.lua",
+			"settings":
+			{
+				"buffer_size": 6861,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "actionbar-mouseover-bar-right.lua",
+			"settings":
+			{
+				"buffer_size": 3254,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "actionbar-mouseover-bar-right2.lua",
+			"settings":
+			{
+				"buffer_size": 3249,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "actionbar-quick-actions.lua",
+			"settings":
+			{
+				"buffer_size": 1820,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "actionbar-range-color.lua",
+			"settings":
+			{
+				"buffer_size": 1236,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "auto-dismount.lua",
+			"settings":
+			{
+				"buffer_size": 2517,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "auto-stance.lua",
+			"settings":
+			{
+				"buffer_size": 1474,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "basic-chat.lua",
+			"settings":
+			{
+				"buffer_size": 3265,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "blue-shaman.lua",
+			"settings":
+			{
+				"buffer_size": 1322,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "camera.lua",
+			"settings":
+			{
+				"buffer_size": 337,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "central-windows.lua",
+			"settings":
+			{
+				"buffer_size": 2061,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "chat-links.lua",
+			"settings":
+			{
+				"buffer_size": 8013,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "chat-tweaks.lua",
+			"settings":
+			{
+				"buffer_size": 1687,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "chat-tweaks-extended.lua",
+			"settings":
+			{
+				"buffer_size": 5131,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "cooldown-numbers.lua",
+			"settings":
+			{
+				"buffer_size": 3324,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "cursor-tooltip.lua",
+			"settings":
+			{
+				"buffer_size": 1120,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "custom.lua",
+			"settings":
+			{
+				"buffer_size": 990,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "dark-ui-elements.lua",
+			"settings":
+			{
+				"buffer_size": 7824,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "equip-compare.lua",
+			"settings":
+			{
+				"buffer_size": 5326,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "health-color.lua",
+			"settings":
+			{
+				"buffer_size": 1529,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "health-numbers.lua",
+			"settings":
+			{
+				"buffer_size": 3087,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "health-numbers-extended.lua",
+			"settings":
+			{
+				"buffer_size": 2537,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "hide-combat-tooltip.lua",
+			"settings":
+			{
+				"buffer_size": 1669,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "hide-errors.lua",
+			"settings":
+			{
+				"buffer_size": 349,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "hide-gryphons.lua",
+			"settings":
+			{
+				"buffer_size": 350,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "hide-unit-frames.lua",
+			"settings":
+			{
+				"buffer_size": 2903,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "hide-world-chat.lua",
+			"settings":
+			{
+				"buffer_size": 2175,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "improved-advanced-options.lua",
+			"settings":
+			{
+				"buffer_size": 1235,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "improved-castbar - old.lua",
+			"settings":
+			{
+				"buffer_size": 3404,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "improved-castbar.lua",
+			"settings":
+			{
+				"buffer_size": 11907,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "improved-interface-options.lua",
+			"settings":
+			{
+				"buffer_size": 804,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "improved-roll-frames.lua",
+			"settings":
+			{
+				"buffer_size": 14017,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "item-colors.lua",
+			"settings":
+			{
+				"buffer_size": 7256,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "loot-monitor.lua",
+			"settings":
+			{
+				"buffer_size": 10766,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "minimap-clock.lua",
+			"settings":
+			{
+				"buffer_size": 1774,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "minimap-framerate-latency.lua",
+			"settings":
+			{
+				"buffer_size": 6802,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "minimap-square.lua",
+			"settings":
+			{
+				"buffer_size": 1090,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "pet-name-happiness.lua",
+			"settings":
+			{
+				"buffer_size": 804,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"bookmark",
+				"SublimeBookmarks: Goto Next Bookmark"
+			],
+			[
+				"view ",
+				"Bookmarks: View all"
+			],
+			[
+				"book",
+				"SublimeBookmarks: Show All Bookmarks "
+			],
+			[
+				"view",
+				"Bookmarks: View all"
+			],
+			[
+				"better",
+				"BetterBookmarks: Previous Bookmark"
+			],
+			[
+				"keybi",
+				"Preferences: Key Bindings"
+			],
+			[
+				"betterbok",
+				"BetterBookmarks: Add Bookmark"
+			],
+			[
+				"viewall",
+				"Bookmarks: View all"
+			],
+			[
+				"bookam",
+				"Bookmarks: View all"
+			],
+			[
+				"compare",
+				"Compare with..."
+			],
+			[
+				"",
+				"Bookmarks: Select Next"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/E/TBC-2.4.3/Interface/AddOns/ShaguTweaks-tbc/mods/ShaguTweaksMods2.4.3.sublime-project",
+		"/E/TBC-2.4.3/Interface/AddOns/ShaguTweaks-tbc/Changelog and Notes.txt",
+		"/E/TBC-2.4.3/Interface/AddOns/ShaguTweaks-tbc/mods/skip-gossip.lua",
+		"/E/3.3.5/interface/AddOns/Leatrix_Plus/Leatrix_Plus.lua",
+		"/E/TBC-2.4.3/Interface/AddOns/ShaguTweaks-tbc/mods/accept-invites.lua",
+		"/E/TBC-2.4.3/Interface/AddOns/ShaguTweaks-tbc/mods/README.md",
+		"/E/3.3.5/interface/AddOns/Leatrix_Plus/Changelog and Notes.txt",
+		"/C/Users/Сёма/Desktop/Backport ShaguTweaksMods/README.md",
+		"/E/TBC-2.4.3/Interface/AddOns/ShaguTweaks-tbc/README.md",
+		"/C/Users/Сёма/Desktop/README Shagu.txt",
+		"/E/TBC-2.4.3/Interface/AddOns/ShaguTweaks-tbc/libs/libnameplate.lua",
+		"/C/Users/Сёма/Desktop/Classic AdiBags/AdiBags.toc",
+		"/C/Users/Сёма/Desktop/Classic AdiBags/AdiBags_TBC.toc",
+		"/C/Users/Сёма/Desktop/Classic AdiBags/AdiBags_Vanilla.toc",
+		"/C/Users/Сёма/Desktop/Classic AdiBags/AdiBags_Wrath.toc",
+		"/C/Users/Сёма/Desktop/Classic AdiBags/CHANGES.txt",
+		"/C/Users/Сёма/Desktop/Classic AdiBags/LICENSE",
+		"/C/Users/Сёма/Desktop/Classic AdiBags/Localization.lua",
+		"/C/Users/Сёма/Desktop/Classic AdiBags/README.md",
+		"/C/Users/Сёма/Desktop/Classic AdiBags/widgets/AnchorWidget.lua",
+		"/C/Users/Сёма/Desktop/Classic AdiBags/widgets/BagSlots.lua",
+		"/C/Users/Сёма/Desktop/Classic AdiBags/widgets/ContainerFrame.lua",
+		"/C/Users/Сёма/Desktop/Classic AdiBags/widgets/ItemButton.lua",
+		"/C/Users/Сёма/Desktop/Classic AdiBags/widgets/LayeredRegion.lua",
+		"/C/Users/Сёма/Desktop/Classic AdiBags/widgets/Section.lua",
+		"/C/Users/Сёма/Desktop/Classic AdiBags/widgets/grid/Column.lua",
+		"/C/Users/Сёма/Desktop/Classic AdiBags/widgets/grid/Dropzone.lua",
+		"/C/Users/Сёма/Desktop/Classic AdiBags/widgets/grid/Grid.lua",
+		"/C/Users/Сёма/Desktop/Classic AdiBags/widgets/grid/Cell.lua",
+		"/C/Users/Сёма/Desktop/Classic AdiBags/modules/ItemLevel.lua",
+		"/C/Users/Сёма/Desktop/Classic AdiBags/modules/Junk.lua",
+		"/C/Users/Сёма/Desktop/Classic AdiBags/modules/Masque.lua",
+		"/C/Users/Сёма/Desktop/Classic AdiBags/modules/MoneyFrame.lua",
+		"/C/Users/Сёма/Desktop/Classic AdiBags/modules/NewItemTracking.lua",
+		"/C/Users/Сёма/Desktop/Classic AdiBags/modules/SectionVisibilityDropdown.lua",
+		"/C/Users/Сёма/Desktop/Classic AdiBags/modules/TooltipInfo.lua",
+		"/C/Users/Сёма/Desktop/Classic AdiBags/modules/BankSwitcher.lua",
+		"/C/Users/Сёма/Desktop/Classic AdiBags/modules/ChangeHighlight.lua",
+		"/C/Users/Сёма/Desktop/Classic AdiBags/modules/CurrencyFrame.lua",
+		"/C/Users/Сёма/Desktop/Classic AdiBags/modules/DataSource.lua",
+		"/C/Users/Сёма/Desktop/Classic AdiBags/modules/FilterOverride.lua",
+		"/C/Users/Сёма/Desktop/Classic AdiBags/core/EventHandlers.lua",
+		"/C/Users/Сёма/Desktop/Classic AdiBags/core/Filters.lua",
+		"/C/Users/Сёма/Desktop/Classic AdiBags/core/Fonts.lua",
+		"/C/Users/Сёма/Desktop/Classic AdiBags/core/Hooks.lua",
+		"/C/Users/Сёма/Desktop/Classic AdiBags/core/ItemDatabase.lua",
+		"/C/Users/Сёма/Desktop/Classic AdiBags/core/Layout.lua",
+		"/C/Users/Сёма/Desktop/Classic AdiBags/core/OO.lua",
+		"/C/Users/Сёма/Desktop/Classic AdiBags/core/Theme.lua",
+		"/C/Users/Сёма/Desktop/Classic AdiBags/core/Utility.lua",
+		"/C/Users/Сёма/Desktop/Classic AdiBags/core/Bags.lua",
+		"/C/Users/Сёма/Desktop/Classic AdiBags/core/Constants.lua",
+		"/C/Users/Сёма/Desktop/Classic AdiBags/core/Core.lua",
+		"/C/Users/Сёма/Desktop/Classic AdiBags/core/DefaultFilters.lua",
+		"/C/Users/Сёма/Desktop/Classic AdiBags/config/Options.lua",
+		"/C/Users/Сёма/Desktop/Classic AdiBags/config/Config-ItemList.lua",
+		"/E/3.3.5/interface/AddOns/AdiBags/modules/DataSource.lua",
+		"/E/3.3.5/interface/AddOns/AdiBags/Options.lua",
+		"/E/3.3.5/interface/AddOns/AdiBags/widgets/ContainerFrame.lua",
+		"/C/Users/Сёма/Desktop/Some Leatrix Codes.txt",
+		"/C/Users/Сёма/Desktop/Logo Zygor.txt",
+		"/E/3.3.5/interface/AddOns/ZygorGuidesViewer/ZygorGuidesViewerOptions.lua",
+		"/E/3.3.5/interface/AddOns/ZygorGuidesViewer/ZygorMapIcon.xml",
+		"/E/3.3.5/interface/AddOns/ZygorGuidesViewer/Bindings.xml",
+		"/E/3.3.5/interface/AddOns/ZygorGuidesViewer/embeds.xml",
+		"/E/3.3.5/interface/AddOns/ZygorGuidesViewer/Faction.lua",
+		"/E/3.3.5/interface/AddOns/ZygorGuidesViewer/files.xml",
+		"/E/3.3.5/interface/AddOns/ZygorGuidesViewer/Foglight.lua",
+		"/E/3.3.5/interface/AddOns/ZygorGuidesViewer/Functions.lua",
+		"/E/3.3.5/interface/AddOns/ZygorGuidesViewer/Goal.lua",
+		"/E/3.3.5/interface/AddOns/ZygorGuidesViewer/guide_format.html",
+		"/E/3.3.5/interface/AddOns/ZygorGuidesViewer/Guide03.lua",
+		"/E/3.3.5/interface/AddOns/ZygorGuidesViewer/Log.lua",
+		"/E/3.3.5/interface/AddOns/ZygorGuidesViewer/MapSpot.lua",
+		"/E/3.3.5/interface/AddOns/ZygorGuidesViewer/MapSpotMarkerTemplates.xml",
+		"/E/3.3.5/interface/AddOns/ZygorGuidesViewer/MapSpotSet.lua",
+		"/E/3.3.5/interface/AddOns/ZygorGuidesViewer/Options.lua",
+		"/E/3.3.5/interface/AddOns/ZygorGuidesViewer/Parser.lua",
+		"/E/3.3.5/interface/AddOns/ZygorGuidesViewer/Pointer.lua",
+		"/E/3.3.5/interface/AddOns/ZygorGuidesViewer/PointerMarkerTemplates.xml",
+		"/E/3.3.5/interface/AddOns/ZygorGuidesViewer/Profession.lua",
+		"/E/3.3.5/interface/AddOns/ZygorGuidesViewer/QuestAutoAccept.lua",
+		"/E/3.3.5/interface/AddOns/ZygorGuidesViewer/QuestTracking.lua",
+		"/E/3.3.5/interface/AddOns/ZygorGuidesViewer/Step.lua",
+		"/E/3.3.5/interface/AddOns/ZygorGuidesViewer/Ver.lua",
+		"/E/3.3.5/interface/AddOns/ZygorGuidesViewer/Waypoints.lua",
+		"/E/3.3.5/interface/AddOns/ZygorGuidesViewer/ZygorGuidesViewer.lua",
+		"/E/3.3.5/interface/AddOns/ZygorGuidesViewer/ZygorGuidesViewer.toc",
+		"/E/3.3.5/interface/AddOns/ZygorGuidesViewer/ZygorGuidesViewerFrame.lua",
+		"/E/3.3.5/interface/AddOns/ZygorGuidesViewer/ZygorGuidesViewerFrame.xml",
+		"/E/3.3.5/interface/AddOns/ZygorGuidesViewer/ZygorGuidesViewerMenuFrame.lua",
+		"/E/3.3.5/interface/AddOns/ZygorGuidesViewer/ZygorGuidesViewerMenuFrame.xml",
+		"/E/3.3.5/interface/AddOns/ZygorGuidesViewer/Localization/esES.lua",
+		"/E/3.3.5/interface/AddOns/ZygorGuidesViewer/Localization/frFR.lua",
+		"/E/3.3.5/interface/AddOns/ZygorGuidesViewer/Localization/koKR.lua",
+		"/E/3.3.5/interface/AddOns/ZygorGuidesViewer/Localization/load.xml",
+		"/E/3.3.5/interface/AddOns/ZygorGuidesViewer/Localization/names.xml",
+		"/E/3.3.5/interface/AddOns/ZygorGuidesViewer/Localization/NPCs_deDE.lua",
+		"/E/3.3.5/interface/AddOns/ZygorGuidesViewer/Localization/NPCs_enUS.lua",
+		"/E/3.3.5/interface/AddOns/ZygorGuidesViewer/Localization/NPCs_esES.lua",
+		"/E/3.3.5/interface/AddOns/ZygorGuidesViewer/Localization/NPCs_frFR.lua",
+		"/E/3.3.5/interface/AddOns/ZygorGuidesViewer/Localization/NPCs_koKR.lua",
+		"/E/3.3.5/interface/AddOns/ZygorGuidesViewer/Localization/NPCs_ruRU.lua",
+		"/E/3.3.5/interface/AddOns/ZygorGuidesViewer/Localization/NPCs_zhCN.lua",
+		"/E/3.3.5/interface/AddOns/ZygorGuidesViewer/Localization/NPCs_zhTW.lua",
+		"/E/3.3.5/interface/AddOns/ZygorGuidesViewer/Localization/ruRU.lua",
+		"/E/3.3.5/interface/AddOns/ZygorGuidesViewer/Localization/zhCN.lua",
+		"/E/3.3.5/interface/AddOns/ZygorGuidesViewer/Localization/zhTW.lua",
+		"/E/3.3.5/interface/AddOns/ZygorGuidesViewer/Localization/Base.lua",
+		"/E/3.3.5/interface/AddOns/ZygorGuidesViewer/Localization/deDE.lua",
+		"/E/3.3.5/interface/AddOns/ZygorGuidesViewer/Localization/enUS.lua",
+		"/E/3.3.5/interface/AddOns/Leatrix_Plus/Before Chat Filter.lua",
+		"/E/3.3.5/interface/AddOns/ZygorGuidesViewer/Data/data.xml",
+		"/E/3.3.5/interface/AddOns/ZygorGuidesViewer/Data/Chains.lua",
+		"/E/3.3.5/interface/AddOns/pretty_minimap/core.lua",
+		"/C/Users/Сёма/Documents/GitHub/pretty_minimap/core.lua",
+		"/E/3.3.5/interface/AddOns/pfQuest-tbc/init/addon.xml",
+		"/E/3.3.5/interface/AddOns/pfQuest-tbc/database.lua",
+		"/E/3.3.5/interface/AddOns/pfQuest-tbc/config.lua",
+		"/E/3.3.5/interface/AddOns/pfQuest-tbc/journal.lua",
+		"/E/3.3.5/interface/AddOns/pfQuest-tbc/locales.lua",
+		"/E/3.3.5/interface/AddOns/pfQuest-tbc/LICENSE",
+		"/E/3.3.5/interface/AddOns/pfQuest-tbc/Makefile",
+		"/E/3.3.5/interface/AddOns/pfQuest-tbc/map.lua",
+		"/E/3.3.5/interface/AddOns/pfQuest-tbc/pfQuest.toc",
+		"/E/3.3.5/interface/AddOns/pfQuest-tbc/pfQuest-tbc.toc",
+		"/E/3.3.5/interface/AddOns/pfQuest-tbc/quest.lua",
+		"/E/3.3.5/interface/AddOns/pfQuest-tbc/route.lua"
+	],
+	"find":
+	{
+		"height": 39.0
+	},
+	"find_in_files":
+	{
+		"height": 113.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"title",
+			"gossip",
+			"closeoptions",
+			"openoptions",
+			"openo",
+			"close",
+			"openoptions",
+			"closeoptions",
+			"openoptions"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "minimap-timer.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3810,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua/Lua.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 73,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "minimap-tweaks.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 842,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua/Lua.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 72,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "modifier-actions.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7657,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua/Lua.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 71,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "move-unitframes.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2693,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua/Lua.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 70,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "mouseover.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3576,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua/Lua.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 69,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "nameplate-classcolor.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 733,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua/Lua.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 68,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "nameplate-scale.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1404,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua/Lua.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 67,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "move-unitframes-extended.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5006,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua/Lua.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 66,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "reduced-actionbar.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5461,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua/Lua.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 65,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "restyle-ui.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 10577,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua/Lua.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 64,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "sell-junk.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5123,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua/Lua.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 63,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "skip-gossip.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2410,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua/Lua.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 62,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "smaller-errors-frame.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 307,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua/Lua.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 61,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "social-colors.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8705,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua/Lua.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 60,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"file": "target-castbar.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3925,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua/Lua.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 59,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 15,
+					"file": "target-debufftimer.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2619,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua/Lua.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 58,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 16,
+					"file": "tooltip-details.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6288,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua/Lua.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 57,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 17,
+					"file": "turtle-health.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1867,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua/Lua.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 56,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 18,
+					"file": "unitframes-bighealth.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3949,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua/Lua.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 55,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 19,
+					"file": "unitframes-classcolor.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2751,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua/Lua.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 54,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 20,
+					"file": "unitframes-classportrait.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2473,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua/Lua.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 53,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 21,
+					"file": "unitframes-combat-indicator.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2128,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua/Lua.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 52,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 22,
+					"file": "unitframes-energy-tick.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2894,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua/Lua.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 51,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 23,
+					"file": "unitframes-healthbar-color.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1938,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua/Lua.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 50,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 24,
+					"file": "unitframes-whitemana.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 674,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua/Lua.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 49,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 25,
+					"file": "vendor-values.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 330244,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua/Lua.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 48,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 26,
+					"file": "worldmap-colors.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3092,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua/Lua.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 47,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 27,
+					"file": "worldmap-coordinates.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2785,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua/Lua.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 46,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 28,
+					"file": "worldmap-reveal.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 26368,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua/Lua.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 45,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 29,
+					"file": "worldmap-window.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2104,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua/Lua.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 44,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 30,
+					"file": "accept-invites.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1053,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua/Lua.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 43,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 31,
+					"file": "actionbar-hide-hotkey.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1283,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua/Lua.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 42,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 32,
+					"file": "actionbar-hide-macro.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1031,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua/Lua.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 41,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 33,
+					"file": "actionbar-improved-expbar.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5384,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua/Lua.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 40,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 34,
+					"file": "actionbar-macros.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5161,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua/Lua.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 39,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 35,
+					"file": "actionbar-mouseover-bar-bottomleft.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7425,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua/Lua.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 38,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 36,
+					"file": "actionbar-mouseover-bar-bottomright.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6861,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua/Lua.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 37,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 37,
+					"file": "actionbar-mouseover-bar-right.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3254,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua/Lua.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 36,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 38,
+					"file": "actionbar-mouseover-bar-right2.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3249,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua/Lua.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 35,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 39,
+					"file": "actionbar-quick-actions.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1820,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua/Lua.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 34,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 40,
+					"file": "actionbar-range-color.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1236,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua/Lua.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 33,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 41,
+					"file": "auto-dismount.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2517,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua/Lua.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 32,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 42,
+					"file": "auto-stance.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1474,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua/Lua.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 31,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 43,
+					"file": "basic-chat.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3265,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua/Lua.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 30,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 44,
+					"file": "blue-shaman.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1322,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua/Lua.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 29,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 45,
+					"file": "camera.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 337,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua/Lua.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 28,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 46,
+					"file": "central-windows.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2061,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua/Lua.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 27,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 47,
+					"file": "chat-links.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8013,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua/Lua.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 26,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 48,
+					"file": "chat-tweaks.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1687,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua/Lua.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 25,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 49,
+					"file": "chat-tweaks-extended.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5131,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua/Lua.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 24,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 50,
+					"file": "cooldown-numbers.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3324,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua/Lua.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 23,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 51,
+					"file": "cursor-tooltip.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1120,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua/Lua.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 22,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 52,
+					"file": "custom.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 990,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua/Lua.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 21,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 53,
+					"file": "dark-ui-elements.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7824,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua/Lua.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 20,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 54,
+					"file": "equip-compare.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5326,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua/Lua.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 19,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 55,
+					"file": "health-color.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1529,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua/Lua.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 18,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 56,
+					"file": "health-numbers.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3087,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua/Lua.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 17,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 57,
+					"file": "health-numbers-extended.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2537,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua/Lua.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 16,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 58,
+					"file": "hide-combat-tooltip.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1669,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua/Lua.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 15,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 59,
+					"file": "hide-errors.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 349,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua/Lua.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 14,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 60,
+					"file": "hide-gryphons.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 350,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua/Lua.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 13,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 61,
+					"file": "hide-unit-frames.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2903,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua/Lua.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 12,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 62,
+					"file": "hide-world-chat.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2175,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua/Lua.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 63,
+					"file": "improved-advanced-options.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1235,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua/Lua.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 64,
+					"file": "improved-castbar - old.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3404,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua/Lua.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 65,
+					"file": "improved-castbar.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 11907,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua/Lua.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 66,
+					"file": "improved-interface-options.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 804,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua/Lua.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 67,
+					"file": "improved-roll-frames.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 14017,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua/Lua.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 68,
+					"file": "item-colors.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7256,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua/Lua.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 69,
+					"file": "loot-monitor.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 10766,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua/Lua.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 70,
+					"file": "minimap-clock.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1774,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua/Lua.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 71,
+					"file": "minimap-framerate-latency.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6802,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua/Lua.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 72,
+					"file": "minimap-square.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1090,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua/Lua.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 73,
+					"file": "pet-name-happiness.lua",
+					"selected": true,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 804,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								286,
+								286
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua/Lua.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"stack_multiselect": false,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 39.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.diff_views":
+	{
+		"height": 126.0
+	},
+	"output.find_results":
+	{
+		"height": 126.0
+	},
+	"pinned_build_system": "",
+	"project": "ShaguTweaksMods2.4.3.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"opti",
+				"config\\Options.lua"
+			],
+			[
+				"con",
+				"widgets\\ContainerFrame.lua"
+			],
+			[
+				"fin",
+				"Find Results"
+			],
+			[
+				"filter",
+				"core\\Filters.lua"
+			],
+			[
+				"",
+				"widgets\\ContainerFrame.lua"
+			],
+			[
+				"conte",
+				"widgets\\ContainerFrame.lua"
+			],
+			[
+				"op",
+				"config\\Options.lua"
+			],
+			[
+				"leatri",
+				"E:\\3.3.5\\interface\\AddOns\\Leatrix_Plus\\Leatrix_Plus.lua"
+			],
+			[
+				"oo",
+				"E:\\3.3.5\\interface\\AddOns\\AdiBags\\OO.lua"
+			],
+			[
+				"adibags",
+				"E:\\3.3.5\\interface\\AddOns\\AdiBags\\AdiBags.lua"
+			],
+			[
+				"contai",
+				"E:\\3.3.5\\interface\\AddOns\\AdiBags\\widgets\\ContainerFrame.lua"
+			],
+			[
+				"contain",
+				"E:\\3.3.5\\interface\\AddOns\\AdiBags\\widgets\\ContainerFrame.lua"
+			],
+			[
+				"zygormap",
+				"E:\\3.3.5\\interface\\AddOns\\ZygorGuidesViewer\\ZygorMapIcon.xml"
+			],
+			[
+				"enus",
+				"E:\\3.3.5\\interface\\AddOns\\ZygorGuidesViewer\\Localization\\enUS.lua"
+			],
+			[
+				"deteco",
+				"E:\\World of Warcraft Cataclysm 4.3.4\\Interface\\AddOns\\ZygorGuidesViewer\\CreatureDetectorIcon.xml"
+			],
+			[
+				"titan",
+				"E:\\World of Warcraft Cataclysm 4.3.4\\Interface\\AddOns\\ZygorGuidesViewer\\TitanZygor.lua"
+			],
+			[
+				"Noguild",
+				"E:\\3.3.5\\interface\\AddOns\\Leatrix_Plus\\Before fixing GuildTrades.lua"
+			],
+			[
+				"main",
+				"E:\\world of warcraft 3.3.5a hd\\interface\\AddOns\\pw_unitframes\\modules\\main.lua"
+			],
+			[
+				"anchor",
+				"E:\\world of warcraft 3.3.5a hd\\interface\\AddOns\\pw_unitframes\\core\\anchor.lua"
+			],
+			[
+				"core",
+				"E:\\world of warcraft 3.3.5a hd\\interface\\AddOns\\pw_unitframes\\core\\core.lua"
+			],
+			[
+				"confi",
+				"E:\\world of warcraft 3.3.5a hd\\interface\\AddOns\\pw_unitframes\\core\\config.lua"
+			],
+			[
+				"cooldown",
+				"E:\\world of warcraft 3.3.5a hd\\interface\\AddOns\\pw_unitframes\\modules\\elements\\cooldown.lua"
+			],
+			[
+				"even",
+				"E:\\world of warcraft 3.3.5a hd\\interface\\AddOns\\pw_unitframes\\core\\event.lua"
+			],
+			[
+				"auraenv",
+				"E:\\TBC-2.4.3\\Interface\\AddOns\\WeakAuras\\AuraEnvironment.lua"
+			],
+			[
+				"bufftri",
+				"E:\\TBC-2.4.3\\Interface\\AddOns\\WeakAuras\\BuffTrigger.lua"
+			],
+			[
+				"bigh",
+				"E:\\TBC-2.4.3\\Interface\\AddOns\\ShaguTweaks-tbc\\mods\\unitframes-bighealth.lua"
+			],
+			[
+				"namepla",
+				"E:\\TBC-2.4.3\\Interface\\AddOns\\ShaguTweaks-tbc\\mods\\nameplate-classcolor.lua"
+			],
+			[
+				"read",
+				"E:\\TBC-2.4.3\\Interface\\AddOns\\MoveAnything\\ReadMe.txt"
+			],
+			[
+				"poin",
+				"E:\\TBC-2.4.3\\Interface\\AddOns\\ZygorGuidesViewer\\Pointer.lua"
+			],
+			[
+				"ma",
+				"E:\\TBC-2.4.3\\Interface\\AddOns\\pfQuest-tbc\\map.lua"
+			],
+			[
+				"way",
+				"E:\\TBC-2.4.3\\Interface\\AddOns\\ZygorGuidesViewer\\Waypoints.lua"
+			],
+			[
+				"fi",
+				"Find Results"
+			],
+			[
+				"option",
+				"E:\\TBC-2.4.3\\Interface\\AddOns\\ZygorGuidesViewer\\Options.lua"
+			],
+			[
+				"map",
+				"E:\\TBC-2.4.3\\Interface\\AddOns\\pfQuest-tbc\\map.lua"
+			],
+			[
+				"engbank",
+				"E:\\TBC-2.4.3\\Interface\\AddOns\\EngBags\\engbank.lua"
+			],
+			[
+				"hooks",
+				"E:\\TBC-2.4.3\\Interface\\AddOns\\EngBags\\hooks.lua"
+			],
+			[
+				"enginv",
+				"E:\\TBC-2.4.3\\Interface\\AddOns\\EngBags\\enginventory.lua"
+			],
+			[
+				"engban",
+				"E:\\TBC-2.4.3\\Interface\\AddOns\\EngBags\\engbank.lua"
+			],
+			[
+				"engi",
+				"E:\\TBC-2.4.3\\Interface\\AddOns\\EngBags\\enginventory.xml"
+			],
+			[
+				"hook",
+				"E:\\TBC-2.4.3\\Interface\\AddOns\\EngBags\\hooks.lua"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"C:\\Users\\Сёма\\Desktop\\m.sublime-workspace"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 323.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 592.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

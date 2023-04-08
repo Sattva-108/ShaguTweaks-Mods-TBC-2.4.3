@@ -1,7 +1,7 @@
 local module = ShaguTweaks:register({
     title = "Skip Gossip Text",
     description = "Skip gossip text when interacting with NPCs unless holding shift.",
-    expansions = { ["vanilla"] = true, ["tbc"] = nil },
+    expansions = { ["vanilla"] = true, ["tbc"] = true },
     category = nil,
     enabled = nil,
 })
@@ -37,6 +37,7 @@ module.enable = function(self)
                         phrase = string.gsub(phrase, "%W", "")                        
                         if phrase == title then
                             SelectGossipOption(i)
+                            print("|cFF00ff99SkipGossip:|r option chosen. Hold a shift key to override.")
                             break
                         end
                     end
@@ -44,6 +45,7 @@ module.enable = function(self)
                     for _, profession in pairs(professions) do
                         if profession == GossipOptions[i] then
                             SelectGossipOption(i)
+                            print("|cFF00ff99SkipGossip:|r option chosen. Hold a shift key to override.")
                             break
                         end
                     end

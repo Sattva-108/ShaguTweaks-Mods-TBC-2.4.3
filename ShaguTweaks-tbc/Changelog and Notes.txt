@@ -1,0 +1,15 @@
+Changelog by Sattva 9th April 2023 #2;
+- Added 2 more modules SkipGossip, AcceptGroupInvites made by GryllsAddons
+- Added message when the gossip was automated. To avoid some people confusion.
+
+Changelog by Sattva 9th April 2023 #1;
+- Addon is ready to release after backport.
+
+
+
+	TODO List:
+Look if something can be done to fix enemy tooltip getting stuck sometimes. (Might be 2.4.3 Client behaviour)
+
+Need to find a fix for this error https://cdn.discordapp.com/attachments/766767499987386402/1094392628533002321/WoW_VJUcJZlzeW.png
+https://gist.github.com/Sattva-108/366f13c5f004e01195bbc59d76dc8d98
+For now disabling the module.

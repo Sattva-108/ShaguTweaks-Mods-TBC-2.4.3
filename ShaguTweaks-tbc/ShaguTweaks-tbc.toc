@@ -36,6 +36,7 @@ mods\custom.lua
 --- Means i did not test it.
 
 # ShaguTweaks-Mods
+mods\accept-invites.lua
 mods\actionbar-hide-hotkey.lua
 mods\actionbar-hide-macro.lua
 mods\actionbar-improved-expbar.lua
@@ -54,7 +55,7 @@ mods\cursor-tooltip.lua
 mods\health-numbers-extended.lua
 mods\hide-combat-tooltip.lua
 mods\hide-unit-frames.lua
-mods\hide-world-chat.lua
+--mods\hide-world-chat.lua (Causing Lua Error. See "Changelog and Notes files in main directory of addon.)
 mods\improved-advanced-options.lua 
 mods\improved-castbar.lua
 --mods\improved-interface-options.lua (No clue how to move the frame)
@@ -67,12 +68,15 @@ mods\modifier-actions.lua
 --mods\move-unitframes-extended.lua (some error i can't fix)
 ---mods\pet-name-happiness.lua
 mods\restyle-ui.lua
+mods\skip-gossip.lua
 mods\smaller-errors-frame.lua
 mods\unitframes-combat-indicator.lua
 mods\unitframes-energy-tick.lua
 mods\unitframes-healthbar-color.lua
 mods\unitframes-whitemana.lua
 mods\worldmap-reveal.lua
+
+
 
 # modules
 mods\dark-ui-elements.lua
