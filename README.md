@@ -12,6 +12,7 @@ These mods aim to preserve the spirit of the default UI while providing modern q
 - Code from [zUI](https://github.com/Ko0z/zUI)
 - Credit to [GryllsAddons](https://github.com/GryllsAddons)
 - Code from [ShaguTweaks-Mods](https://github.com/GryllsAddons/ShaguTweaks-Mods) 
+- Special Thanks to [Macumba](https://github.com/Macumbafeh/) for inspiring me.
 
 ## Installation / Updating
 
