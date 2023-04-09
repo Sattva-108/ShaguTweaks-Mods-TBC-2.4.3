@@ -26,6 +26,32 @@ These mods aim to preserve the spirit of the default UI while providing modern q
 The download contains an optional image file containing alternative high resolution unitframe class icons `UI-Classes-Circles.tga`
 Copy this file to the img folder located in `\Interface\AddOns\ShaguTweaks-tbc\img`
 
+#### `Changelog`, `To Do List` and `known bugs` can be viewed in [Changelog and Notes.txt](https://github.com/Sattva-108/ShaguTweaks-Mods-TBC-2.4.3/blob/main/ShaguTweaks-tbc/Changelog%20and%20Notes.txt) inside addon folder.
+
+## Screenshots
+
+![Energy Tick](https://user-images.githubusercontent.com/74269253/226327312-f21577d1-2cce-4501-bf46-999d92fdf64c.png)
+
+*Energy/Mana Tick*
+
+![preview](https://raw.githubusercontent.com/GryllsAddons/AddonPreviews/main/ShaguTweaks-Mods/ST_TooltipCursor.png)  
+*Cursor Tooltip*
+
+![preview](https://raw.githubusercontent.com/GryllsAddons/AddonPreviews/main/ShaguTweaks-Mods/ST_LootMonitor3.png)  
+*Loot Monitor*
+
+![preview](https://raw.githubusercontent.com/GryllsAddons/AddonPreviews/main/ShaguTweaks-Mods/ST_FPSMS2.png)  
+*MiniMap Framerate & Latency*
+
+![preview](https://raw.githubusercontent.com/GryllsAddons/AddonPreviews/main/ShaguTweaks-Mods/ST_Roll1.png)  
+*Improved Roll Frames*
+
+![preview](https://raw.githubusercontent.com/GryllsAddons/AddonPreviews/main/ShaguTweaks-Mods/ST_Roll2.png)  
+*Improved Roll Frames*
+
+![preview](https://raw.githubusercontent.com/GryllsAddons/AddonPreviews/main/ShaguTweaks-Mods/ST_UIRestyle.png)  
+*Restyle UI + Minimap Tweaks*
+
 ## Mods
 
 - **Smaller Errors Frame**    
@@ -105,26 +131,3 @@ Copy this file to the img folder located in `\Interface\AddOns\ShaguTweaks-tbc\i
 - **WorldMap Reveal**    
 *Reveals unexplored areas on the world map.*    
 
-## Screenshots
-
-![Energy Tick](https://user-images.githubusercontent.com/74269253/226327312-f21577d1-2cce-4501-bf46-999d92fdf64c.png)
-
-*Energy/Mana Tick*
-
-![preview](https://raw.githubusercontent.com/GryllsAddons/AddonPreviews/main/ShaguTweaks-Mods/ST_TooltipCursor.png)  
-*Cursor Tooltip*
-
-![preview](https://raw.githubusercontent.com/GryllsAddons/AddonPreviews/main/ShaguTweaks-Mods/ST_LootMonitor3.png)  
-*Loot Monitor*
-
-![preview](https://raw.githubusercontent.com/GryllsAddons/AddonPreviews/main/ShaguTweaks-Mods/ST_FPSMS2.png)  
-*MiniMap Framerate & Latency*
-
-![preview](https://raw.githubusercontent.com/GryllsAddons/AddonPreviews/main/ShaguTweaks-Mods/ST_Roll1.png)  
-*Improved Roll Frames*
-
-![preview](https://raw.githubusercontent.com/GryllsAddons/AddonPreviews/main/ShaguTweaks-Mods/ST_Roll2.png)  
-*Improved Roll Frames*
-
-![preview](https://raw.githubusercontent.com/GryllsAddons/AddonPreviews/main/ShaguTweaks-Mods/ST_UIRestyle.png)  
-*Restyle UI + Minimap Tweaks*
