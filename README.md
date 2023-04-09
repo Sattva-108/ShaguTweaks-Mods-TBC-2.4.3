@@ -15,14 +15,16 @@ These mods aim to preserve the spirit of the default UI while providing modern q
 
 ## Installation / Updating
 
-1. Copy the "ShaguTweaks-tbc" folder within the "ShaguTweaks-Mods-TBC-2.4.3-main" folder inside the .zip to "\Interface\AddOns\".    
+1. Install [ShaguTweaks-tbc](https://github.com/shagu/ShaguTweaks/archive/master.zip) if not yet installed :warning: Don't forget to rename `ShaguTweaks-master` folder to `ShaguTweaks-tbc` :warning:
+1. Download [ShaguTweaks-Mods](https://github.com/Sattva-108/ShaguTweaks-Mods-TBC-2.4.3/archive/refs/heads/main.zip)
+1. Copy the `ShaguTweaks-tbc` folder within the `ShaguTweaks-Mods-TBC-2.4.3-main` folder inside the .zip to `\Interface\AddOns\`  
 2. Replace/overwrite any existing files when copying.
 3. Enable the mod(s) by selecting them in the ShaguTweaks menu (Esc > Advanced Options).
-4. When updating the ShaguTweaks addon, don't overwrite the .toc file supplied inside the "ShaguTweaks" folder.
+#### :exclamation: `IMPORTANT` :exclamation: When updating the `ShaguTweaks-tbc` addon, don't overwrite the `.toc` file supplied inside the `ShaguTweaks-tbc` folder.
 
 ### Optional Portrait Class Icons - Install
-The download contains an optional image file containing alternative high resolution unitframe class icons (UI-Classes-Circles.tga).    
-Copy this file to the img folder located in "\Interface\AddOns\ShaguTweaks-tbc\img"
+The download contains an optional image file containing alternative high resolution unitframe class icons `UI-Classes-Circles.tga`
+Copy this file to the img folder located in `\Interface\AddOns\ShaguTweaks-tbc\img`
 
 ## Mods
 
