@@ -31,6 +31,10 @@ Copy this file to the img folder located in `\Interface\AddOns\ShaguTweaks-tbc\i
 
 ## Screenshots
 
+![restyleUI-minimap](https://user-images.githubusercontent.com/74269253/231318857-9ab2540f-8fc9-4b5f-9efe-87c3302ac918.gif)
+
+**Restyle-UI + Minimap Tweaks - tweaks for minimap, timer and framerate**
+
 ![Energy Tick](https://user-images.githubusercontent.com/74269253/226327312-f21577d1-2cce-4501-bf46-999d92fdf64c.png)
 
 *Energy/Mana Tick*
@@ -41,17 +45,8 @@ Copy this file to the img folder located in `\Interface\AddOns\ShaguTweaks-tbc\i
 ![preview](https://raw.githubusercontent.com/GryllsAddons/AddonPreviews/main/ShaguTweaks-Mods/ST_LootMonitor3.png)  
 *Loot Monitor*
 
-![preview](https://raw.githubusercontent.com/GryllsAddons/AddonPreviews/main/ShaguTweaks-Mods/ST_FPSMS2.png)  
-*MiniMap Framerate & Latency*
-
-![preview](https://raw.githubusercontent.com/GryllsAddons/AddonPreviews/main/ShaguTweaks-Mods/ST_Roll1.png)  
-*Improved Roll Frames*
-
 ![preview](https://raw.githubusercontent.com/GryllsAddons/AddonPreviews/main/ShaguTweaks-Mods/ST_Roll2.png)  
 *Improved Roll Frames*
-
-![preview](https://raw.githubusercontent.com/GryllsAddons/AddonPreviews/main/ShaguTweaks-Mods/ST_UIRestyle.png)  
-*Restyle UI + Minimap Tweaks*
 
 ## Mods
 
@@ -60,6 +55,23 @@ Copy this file to the img folder located in `\Interface\AddOns\ShaguTweaks-tbc\i
 
 - **Unit Frame Energy & Mana Tick**    
 *Adds an energy & mana tick to the player frame.*
+
+- **MiniMap Framerate & Latency**    
+*Adds a small framerate & latency display to the mini map.* - :speech_balloon:**Tweaked by RestyleUI.**
+
+- **MiniMap Timer**    
+*Adds a togglable timer to the minimap clock.* - :speech_balloon:**Tweaked by RestyleUI.** <br>
+*Left click the clock to toggle the timer, left click the timer to start/pause or right click to reset.*
+
+- **Restyle UI**    
+*Restyles and adds more functionality to minimap, framerate frame, timer, clock, buffs, buttons, minimap and unit names.*    
+*If you are using MinimapButtonBag addon the MinimapButtonBag button will be repositioned to the bottom left of the minimap and will shown on mouseover.*
+
+- **Skip Gossip Text**    
+*Automatically skips some gossips (for example trainer.)* :speech_balloon:**Hold Shift key when interracting with NPC to cancel automation.**
+
+- **Accept Group Invites**    
+*Automatically accepts group invites from friends / guildies*
 
 - **Hide Hotkey Text**    
 *Hides the hotkeys on the action bars.*
@@ -111,17 +123,6 @@ Copy this file to the img folder located in `\Interface\AddOns\ShaguTweaks-tbc\i
 *Click the item name to get item details.*    
 *Items looted over 1 minute ago will be shown at 50% transparency.*    
 *Items looted over 10 minutes ago will be shown at 25% transparency.*
-
-- **MiniMap Framerate & Latency**    
-*Adds a small framerate & latency display to the mini map.*
-
-- **MiniMap Timer**    
-*Adds a togglable timer to the minimap clock.*    
-*Left click the clock to toggle the timer, left click the timer to start or right click to reset.*
-
-- **Restyle UI**    
-*Restyles supported addons, buffs, buttons, minimap and unit names.*    
-*If you are using MinimapButtonBag addon the MinimapButtonBag button will be repositioned to the bottom left of the minimap and will shown on mouseover.*
 
 - **Unit Frame Healthbar Colors**    
 *Changes the unitframe and nameplate healthbar color when at 20% health or lower.*
