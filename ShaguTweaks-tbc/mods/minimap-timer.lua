@@ -8,11 +8,23 @@ local module = ShaguTweaks:register({
   enabled = nil,
 })
 
+local frameWidth = 145 -- replace with the actual width of your frame
+local frameHeight = 30 -- replace with the actual width of your frame
+
+local clusterWidth = MinimapCluster:GetWidth() * MinimapCluster:GetScale()
+local clusterHeight = MinimapCluster:GetHeight() * MinimapCluster:GetScale()
+
+local widthScale = frameWidth / clusterWidth
+local heightScale = frameHeight / clusterHeight
+
 MinimapTimer = CreateFrame("BUTTON", "Timer", Minimap)
 MinimapTimer:Hide()
 MinimapTimer:SetFrameLevel(64)
-MinimapTimer:SetWidth(70)
-MinimapTimer:SetHeight(23)
+
+-- MinimapTimer:SetWidth(width)
+-- MinimapTimer:SetHeight(23)
+MinimapTimer:SetSize(clusterWidth * widthScale, clusterHeight * heightScale)
+
 MinimapTimer:SetBackdrop({
   bgFile = "Interface\\Tooltips\\UI-Tooltip-Background",
   edgeFile = "Interface\\Tooltips\\UI-Tooltip-Border",
@@ -25,7 +37,7 @@ MinimapTimer:SetBackdropColor(.4,.4,.4,1)
 module.enable = function(self)
   MinimapTimer:EnableMouse(true)
   local timertext = MinimapTimer:CreateFontString("Status", "LOW", "GameFontNormal")
-  timertext:SetFont(STANDARD_TEXT_FONT, 12, "OUTLINE")
+  timertext:SetFont(STANDARD_TEXT_FONT, 18, "OUTLINE")
   timertext:SetFontObject(GameFontWhite)
   timertext:SetAllPoints(MinimapTimer)
 
@@ -34,22 +46,38 @@ module.enable = function(self)
   local timerelapsed = nil
   local timerpaused = nil
   
-  local function formattime(e)
-    if e then
-      local t = floor(e)
-      local h = floor(mod(t,86400)/3600)
-      local m = floor(mod(t,3600)/60)
-      local s = floor(mod(t,60))
-      return h, m, s
-    else
-      return 0, 0, 0
-    end
+local function formattime(e, speedup)
+  if e then
+    local speedup = 1 -- for testing purpose, 1 = normal timer speed.
+    local t = floor(e * speedup) -- Multiply elapsed time by the speedup factor
+    local h = floor(mod(t, 86400) / 3600)
+    local m = floor(mod(t, 3600) / 60)
+    local s = floor(mod(t, 60))
+    return h, m, s
+  else
+    return 0, 0, 0
   end
+end
 
-  local function updatetext()
-    local h,m,s = formattime(timerelapsed)
-   timertext:SetText(format("%02d:%02d:%02d",h,m,s))
+local function updatetext()
+  local h, m, s = formattime(timerelapsed)
+  local color_inactive = "7f7f7f" -- Lowered alpha color (grey)
+
+  -- Hiding hours if its not active
+  -- Change color of m, s if they are not active.
+  if h == 0 and m == 0 and s == 0 then
+    timertext:SetText(format("|cff%s%02d : |r|cff%s%02d|r", color_inactive, m, color_inactive, s))
+   -- Change color of m if it's not active.   
+  elseif h == 0 and m == 0 and s > 0 then
+    timertext:SetText(format("|cff%s%02d : |r%02d", color_inactive, m, s))
+   -- Do not change color if both m and s are active.
+  elseif h == 0 and m > 0 then
+    timertext:SetText(format("%02d : %02d", m, s))
+   -- Do not change color all h, m, s are active.
+  elseif h > 0 then
+    timertext:SetText(format("%02d : %02d : %02d", h, m, s))  
   end
+end
 
   local function starttimer()
     timerstarted = GetTime()
@@ -121,14 +149,14 @@ module.enable = function(self)
       end
     end
 
-    if MinimapClock and MinimapClock:IsVisible() then
-      MinimapTimer:SetPoint("TOP", MinimapClock, "BOTTOM")
-      MinimapClock:SetScript("OnMouseDown", toggle)
+    if TimeManagerClockButton and TimeManagerClockButton:IsVisible() then
+      MinimapTimer:SetPoint("TOP", TimeManagerClockButton, "BOTTOM", 1, -13)
+      TimeManagerClockButton:SetScript("OnMouseDown", toggle)
     elseif GameTimeFrame:IsVisible() then
-      MinimapTimer:SetPoint("TOP", Minimap, "BOTTOM", 0, -12)
+      MinimapTimer:SetPoint("TOP", Minimap, "BOTTOM", 1, -20)
       GameTimeFrame:SetScript("OnMouseDown", toggle)
     else
-      MinimapTimer:SetPoint("TOP", Minimap, "BOTTOM", 0, -12)
+      MinimapTimer:SetPoint("TOP", Minimap, "BOTTOM", 1, -20)
       MinimapTimer:Show()
     end
   end

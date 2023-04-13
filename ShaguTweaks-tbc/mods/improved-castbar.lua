@@ -4,6 +4,7 @@ local module = ShaguTweaks:register({
     expansions = { ["vanilla"] = true, ["tbc"] = true },
     enabled = nil,
 })
+local CASTING_BAR_ALPHA = 0.8
 
 module.enable = function(self)
    local _G = ShaguTweaks.GetGlobalEnv()
@@ -160,7 +161,7 @@ function Castbars:OnInitialize()
     });
 
     -- LibStub("AceConfig-3.0"):RegisterOptionsTable("Castbars", self:GetOptionsTable());
-    self.BlizzardOptionsFrame = LibStub("AceConfigDialog-3.0"):AddToBlizOptions("Castbars", "Castbars");
+    -- self.BlizzardOptionsFrame = LibStub("AceConfigDialog-3.0"):AddToBlizOptions("Castbars", "Castbars");
 
     -- Prevent the UIParent from moving the CastingBarFrame around
     UIPARENT_MANAGED_FRAME_POSITIONS["CastingBarFrame"] = nil;

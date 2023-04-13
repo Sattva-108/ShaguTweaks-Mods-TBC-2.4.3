@@ -15,26 +15,26 @@ module.enable = function(self)
             SP_SwingTimer
         ]]
 
-        if IsAddOnLoaded("SP_SwingTimer") then
-            local o,e,i = 2,10,4
-            local f = CreateFrame("Frame", nil, SP_ST_Frame)
-            f:SetPoint("TOPLEFT", f:GetParent(), "TOPLEFT", -o, o)
-            f:SetPoint("BOTTOMRIGHT", f:GetParent(), "BOTTOMRIGHT", o, -o)
-            f:SetBackdrop({
-                edgeFile = "Interface/Tooltips/UI-Tooltip-Border",
-                edgeSize = e,
-                insets = { left = i, right = i, top = i, bottom = i },
-            })
+        -- if IsAddOnLoaded("SP_SwingTimer") then
+        --     local o,e,i = 2,10,4
+        --     local f = CreateFrame("Frame", nil, SP_ST_Frame)
+        --     f:SetPoint("TOPLEFT", f:GetParent(), "TOPLEFT", -o, o)
+        --     f:SetPoint("BOTTOMRIGHT", f:GetParent(), "BOTTOMRIGHT", o, -o)
+        --     f:SetBackdrop({
+        --         edgeFile = "Interface/Tooltips/UI-Tooltip-Border",
+        --         edgeSize = e,
+        --         insets = { left = i, right = i, top = i, bottom = i },
+        --     })
 
-            local f = CreateFrame("Frame", nil, SP_ST_FrameOFF)
-            f:SetPoint("TOPLEFT", f:GetParent(), "TOPLEFT", -o, o)
-            f:SetPoint("BOTTOMRIGHT", f:GetParent(), "BOTTOMRIGHT", o, -o)
-            f:SetBackdrop({
-                edgeFile = "Interface/Tooltips/UI-Tooltip-Border",
-                edgeSize = e,
-                insets = { left = i, right = i, top = i, bottom = i },
-            })
-        end
+        --     local f = CreateFrame("Frame", nil, SP_ST_FrameOFF)
+        --     f:SetPoint("TOPLEFT", f:GetParent(), "TOPLEFT", -o, o)
+        --     f:SetPoint("BOTTOMRIGHT", f:GetParent(), "BOTTOMRIGHT", o, -o)
+        --     f:SetBackdrop({
+        --         edgeFile = "Interface/Tooltips/UI-Tooltip-Border",
+        --         edgeSize = e,
+        --         insets = { left = i, right = i, top = i, bottom = i },
+        --     })
+        -- end
     end
 
     local function buffs()
@@ -158,11 +158,21 @@ module.enable = function(self)
         styleFrame:SetWidth(Minimap:GetWidth())
 
         -- Zone Text
-        MinimapZoneText:ClearAllPoints()
-        MinimapZoneText:SetPoint("TOP", Minimap, 0, 13)
+        MinimapZoneTextButton:ClearAllPoints()
+        MinimapZoneTextButton:SetPoint("TOP", Minimap, 0, 20)
         MinimapZoneText:SetFont("Fonts\\skurri.TTF", 14, "OUTLINE")
         MinimapZoneText:SetDrawLayer("OVERLAY", 7)        
         MinimapZoneText:SetParent(styleFrame)
+MinimapZoneTextButton:SetScript("OnMouseDown", function(self, button)
+  if button == "LeftButton" or button == "RightButton" then
+    if Minimap:IsShown() then
+      Minimap:Hide()
+    else
+      Minimap:Show()
+    end
+  end
+end)
+
 		
 		
         local function removeBackdrop(frame)
@@ -180,33 +190,48 @@ module.enable = function(self)
         end
 
         -- ShaguTweaks clock
-        if MinimapClock then
+        -- if MinimapClock then
             -- removeBackdrop(MinimapClock)
-            MinimapClock:ClearAllPoints()
-            MinimapClock:SetPoint("CENTER", styleFrame, "CENTER", -1, 0)
-            -- lock(MinimapClock)
-        end
+            TimeManagerClockButton:ClearAllPoints()
+            TimeManagerClockButton:SetPoint("CENTER", styleFrame, "CENTER", -1, 0)
+            TimeManagerClockButton:SetScale(1.2)
+            TimeManagerClockButton:DisableDrawLayer("BORDER")
+            TimeManagerClockButton:SetNormalTexture("Interface\\Tooltips\\UI-Tooltip-Background")
+            TimeManagerClockButton:SetSize(37, 13)
+            -- Change background color
+            TimeManagerClockButton:GetNormalTexture():SetVertexColor(0, 0, 0)
+            TimeManagerClockButton:GetNormalTexture():SetAlpha(0.5)
+-- Change text size
+local clockFrame, clockTime = TimeManagerClockButton:GetRegions()
+clockTime:SetFont("Fonts\\FRIZQT__.TTF", 11.5) -- Replace the font path and size with your desired values
+clockTime:SetTextColor(1, 1, 0)  -- Change the RGB values to the desired text color
 
-        -- ShaguTweaks-Mods timer
-        if MinimapTimer then
-            -- removeBackdrop(MinimapTimer)
-            MinimapTimer:ClearAllPoints()
-            MinimapTimer:SetPoint("TOP", styleFrame, "BOTTOM")
-        end
 
-        -- ShaguTweaks-Mods fps
-        if MinimapFPS then
-            -- removeBackdrop(MinimapFPS)
-            MinimapFPS:ClearAllPoints()
-            MinimapFPS:SetPoint("LEFT", styleFrame, "LEFT")
-        end
 
-        -- ShaguTweaks-Mods ms
-        if MinimapMS then
-            -- removeBackdrop(MinimapMS)
-            MinimapMS:ClearAllPoints()
-            MinimapMS:SetPoint("RIGHT", styleFrame, "RIGHT")
-        end
+        -- end
+
+
+
+        -- -- ShaguTweaks-Mods timer
+        -- if MinimapTimer then
+        --     -- removeBackdrop(MinimapTimer)
+        --     MinimapTimer:ClearAllPoints()
+        --     MinimapTimer:SetPoint("TOP", styleFrame, "BOTTOM")
+        -- end
+
+        -- -- ShaguTweaks-Mods fps
+        -- if MinimapFPS then
+        --     -- removeBackdrop(MinimapFPS)
+        --     MinimapFPS:ClearAllPoints()
+        --     MinimapFPS:SetPoint("LEFT", styleFrame, "LEFT", -3, -12)
+        -- end
+
+        -- -- ShaguTweaks-Mods ms
+        -- if MinimapMS then
+        --     -- removeBackdrop(MinimapMS)
+        --     MinimapMS:ClearAllPoints()
+        --     MinimapMS:SetPoint("RIGHT", styleFrame, "RIGHT", 3, -12)
+        -- end
 
         if Minimap.border then -- if using square minimap
             -- Tracking
@@ -216,14 +241,92 @@ module.enable = function(self)
            -- MiniMapTrackingBorder:SetTexture(nil)
 			MiniMapWorldMapButton:Hide()
             MinimapToggleButton:Hide()
-			MinimapZoneTextButton:Hide()
+			-- MinimapZoneTextButton:Hide()
 			MinimapBorderTop:Hide()
+
+
+
+                -- Minimap clicks
+            MiniMapTracking:Hide()
+            GameTimeFrame:Hide()
+            Minimap:SetScript("OnMouseUp", function(self, button)
+
+                if button == "RightButton"  then
+                    ToggleDropDownMenu(1, nil, MiniMapTrackingDropDown, self)
+                elseif button == "MiddleButton" then
+                    ToggleFrame(WorldMapFrame)
+                elseif button == "LeftButton" then
+                    Minimap_OnClick(self)
+                end
+
+            end)
+
+
+-- Hide Circle around mail button
+MiniMapMailFrame:DisableDrawLayer("OVERLAY")
+
+-- Get the texture of MiniMapMailFrame
+local mailIcon = MiniMapMailFrame:GetRegions()
+mailIcon:SetTexture("Interface\\Minimap\\TRACKING\\Mailbox")
+
+-- Set the scale of the icon
+MiniMapMailFrame:SetScale(1.3)
+
+-- Move the icon to the top right of the minimap
+MiniMapMailFrame:SetPoint("TOPRIGHT", Minimap, "TOPLEFT", 20, 12)
+
+-- Flag to track if mail icon is hidden
+local isHidden = false
+
+-- Function to toggle mail icon visibility
+local function toggleMailIcon()
+    if isHidden then
+        mailIcon:Show()
+        isHidden = false
+    else
+        mailIcon:Hide()
+        GameTooltip:Hide() -- re-show the tooltip to update its size
+        isHidden = true
+        -- UIErrorsFrame:AddMessage("Mail button is hidden. Right click again to show.", 0.1, 1.0, 0.1, 1.0, 3)
+    end
+end
+
+-- Make the mail icon hide/show on right-click
+MiniMapMailFrame:SetScript("OnMouseUp", function(self, button)
+    if button == "RightButton" then
+        toggleMailIcon()
+    end
+end)
+
+
+-- Add new tooltip to the mail button
+local originalMailFrame_OnEnter = MiniMapMailFrame:GetScript("OnEnter")
+
+local function modifiedMailFrame_OnEnter(self)
+    originalMailFrame_OnEnter(self)
+
+    GameTooltip:AddLine("  ", 1, 1, 1, true)
+    GameTooltip:AddLine("|cffeda55fRight-Click|r |cff99ff00to toggle minimap button.|r")
+
+    GameTooltip:SetMinimumWidth(200) -- set the minimum width of the tooltip
+    GameTooltip:Show() -- re-show the tooltip to update its size
+end
+
+MiniMapMailFrame:SetScript("OnEnter", modifiedMailFrame_OnEnter)
+
+
+
+
+
+
+
+
 			
-			-- Mail
-            MiniMapMailFrame:ClearAllPoints()
-            MiniMapMailFrame:SetPoint("TOPRIGHT", Minimap, "TOPRIGHT", 4, 2)
-            MiniMapMailFrame:SetScale(1.2)
-            MiniMapMailBorder:SetTexture(nil)
+			-- -- Mail
+            -- MiniMapMailFrame:ClearAllPoints()
+            -- MiniMapMailFrame:SetPoint("TOPRIGHT", Minimap, "TOPRIGHT", 4, 2)
+            -- MiniMapMailFrame:SetScale(1.2)
+            -- MiniMapMailBorder:SetTexture(nil)
 
             -- PVP
             MiniMapBattlefieldFrame:ClearAllPoints()
@@ -297,6 +400,15 @@ module.enable = function(self)
         nameFont(PartyMemberFrame2PetFrame.name)
         nameFont(PartyMemberFrame3PetFrame.name)
         nameFont(PartyMemberFrame4PetFrame.name)
+    end
+
+    local function font()
+        local chatframes = { ChatFrame1, ChatFrame2, ChatFrame3}
+
+        for _, chatframe in pairs(chatframes) do
+            local font, size = chatframe:GetFont()
+            chatframe:SetFont(font, size, "OUTLINE")
+        end
     end
 
     local events = CreateFrame("Frame", nil, UIParent)	

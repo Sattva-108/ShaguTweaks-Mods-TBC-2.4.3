@@ -1,6 +1,19 @@
+Changelog by Sattva 11th April 2023 #4;
+- You can now left-click framerate to ReloadUI and Right-click to launch ShaguTweaks configuration panel.
+- Hide tracking button and enable right click on minimap instead.
+- RestyleUI minimap mail icon, can now right click it, to temporarily hide.
+- Rework timer, made it fit the minimap size, position and size based on minimap scale now!
+- Rework timer, now hours hidden till timer hits 60 minutes.
+- Hide minimap and its modules by clicking Zone Text.
+
+Changelog by Sattva 10th April 2023 #3;
+- Imported some fixes made by Grylls in 1.12 client addon version.
+- Fixed positions of some minimap modules Timer, FPS, MS
+- Changed size of Timer and changed formatting colors, added conditions to formatting. 
+
 Changelog by Sattva 9th April 2023 #2;
 - Added 2 more modules SkipGossip, AcceptGroupInvites made by GryllsAddons
-- Added message when the gossip was automated. To avoid some people confusion.
+- Added message after the gossip was automated. To avoid some people confusion.
 
 Changelog by Sattva 9th April 2023 #1;
 - Addon is ready to release after backport.
@@ -9,8 +22,20 @@ Changelog by Sattva 9th April 2023 #1;
 
 	TODO List:
 
+High Prio:
+
 Look if something can be done to fix enemy tooltip getting stuck sometimes. (Might be 2.4.3 Client behaviour)
+Add /slash commands to customise cast bar (for those who want to disable timer/latencybox/keep blizzard texture border/remove icon) 
+Add Minimap Button bag
+Need to test minimap button bag addon.
+
+
+
+
+Low Prio:
+Need to rewrite positions of FPS, MS modules, so they scale with minimap sizing and such, just like minimap timer module.
+If not Restyle UI and Square minimap then move MS and FPS frames lower, so they dont overlap minimap.
 Need to find a fix for this error https://cdn.discordapp.com/attachments/766767499987386402/1094392628533002321/WoW_VJUcJZlzeW.png
 	https://gist.github.com/Sattva-108/366f13c5f004e01195bbc59d76dc8d98
 	For now disabling the module.
-Add /slash commands to customise cast bar (for those who want to disable timer/latencybox/keep blizzard texture border/remove icon) 
+Need to fix chat channels not showing class colors in social-chat module for non-cached names. example https://github.com/Devrak/TBC-DarkShift
