@@ -11,15 +11,18 @@ module.enable = function(self)
 
     local function ShowFrames()
         for _, frame in pairs(frames) do
-            frame:Show()
+            frame:SetAlpha(1)
+            GameTooltip:Show()
         end
     end
 
     local function HideFrames()
         for _, frame in pairs(frames) do
-            frame:Hide()
+            frame:SetAlpha(0)
         end
     end
+
+
 
     local function isCasting()
         if CastingBarFrame.casting or CastingBarFrame.channeling then return true end
@@ -85,4 +88,44 @@ module.enable = function(self)
     events:SetScript("OnEvent", function()
         CheckConditions()
     end)
+
+    -- show on mouseover
+    for _, frame in pairs(frames) do
+    frame:SetScript("OnEnter", function()
+    frame:SetAlpha(1)
+    end)
+    end
+
+    -- hide on mousover but check coditions above.
+    for _, frame in pairs(frames) do
+    frame:SetScript("OnLeave", function()
+        frame:SetAlpha(0)
+        CheckConditions()       
+    end)
+    end
+
+    -- script to fix player frame fading when entering health/mana bar
+    local function setStatusBarScript(bar)
+        bar:SetScript("OnEnter", function()
+            PlayerFrame:SetAlpha(1)
+            ShowTextStatusBarText(bar)
+        end)
+    end
+    -- exectuting script to fix fading
+    setStatusBarScript(PlayerFrameHealthBar)
+    setStatusBarScript(PlayerFrameManaBar)
+         
+
+    local function setPetStatusBarScript(bar)
+        bar:SetScript("OnEnter", function()
+            PetFrame:SetAlpha(1)
+            ShowTextStatusBarText(bar)
+        end)
+    end
+
+    -- executing script to fix fading
+    setPetStatusBarScript(PetFrameHealthBar)
+    setPetStatusBarScript(PetFrameManaBar)
+
 end
+

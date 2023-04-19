@@ -8,7 +8,24 @@ local module = ShaguTweaks:register({
   enabled = nil,
 })
 
-local frameWidth = 145 -- replace with the actual width of your frame
+-- create frame to avoid MinimapButtonBag addons hooking my own Frames. 
+local MTframeWidth = Minimap:GetWidth()
+local MTframeHeight = 1 -- replace with the actual height of your frame
+
+local MTclusterWidth = Minimap:GetWidth() * Minimap:GetScale()
+local MTclusterHeight = Minimap:GetHeight() * Minimap:GetScale()
+
+local MTwidthScale = MTframeWidth / MTclusterWidth
+local MTheightScale = MTframeHeight / MTclusterHeight
+
+local MTstyleFrame = CreateFrame("Frame", nil, Minimap)
+MTstyleFrame:SetPoint("CENTER", Minimap, "BOTTOM")
+
+MTstyleFrame:SetSize(MTclusterWidth * MTwidthScale, MTclusterHeight * MTheightScale)
+
+
+-- locals for adjusting minimap timer based on minimap scale, width
+local frameWidth = Minimap:GetWidth() + 8 -- replace with the actual width of your frame
 local frameHeight = 30 -- replace with the actual width of your frame
 
 local clusterWidth = MinimapCluster:GetWidth() * MinimapCluster:GetScale()
@@ -17,7 +34,8 @@ local clusterHeight = MinimapCluster:GetHeight() * MinimapCluster:GetScale()
 local widthScale = frameWidth / clusterWidth
 local heightScale = frameHeight / clusterHeight
 
-MinimapTimer = CreateFrame("BUTTON", "Timer", Minimap)
+--create minimap timer frame
+MinimapTimer = CreateFrame("BUTTON", "Timer", MTstyleFrame)
 MinimapTimer:Hide()
 MinimapTimer:SetFrameLevel(64)
 
@@ -150,7 +168,7 @@ end
     end
 
     if TimeManagerClockButton and TimeManagerClockButton:IsVisible() then
-      MinimapTimer:SetPoint("TOP", TimeManagerClockButton, "BOTTOM", 1, -13)
+      MinimapTimer:SetPoint("TOP", TimeManagerClockButton, "BOTTOM", 1, -15)
       TimeManagerClockButton:SetScript("OnMouseDown", toggle)
     elseif GameTimeFrame:IsVisible() then
       MinimapTimer:SetPoint("TOP", Minimap, "BOTTOM", 1, -20)

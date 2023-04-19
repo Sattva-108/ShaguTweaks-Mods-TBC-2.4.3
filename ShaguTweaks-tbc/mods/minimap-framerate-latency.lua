@@ -82,21 +82,36 @@ module.enable = function(self)
         gradientcolors[index].h
     end
 
+    -- create frame to avoid MinimapButtonBag addons hooking my own Frames. 
+    local SFframeWidth = Minimap:GetWidth()
+    local SFframeHeight = 1 -- replace with the actual height of your frame
 
-local frameWidth = 49 -- replace with the actual width of your frame
-local frameHeight = 23 -- replace with the actual width of your frame
+    local SFclusterWidth = Minimap:GetWidth() * Minimap:GetScale()
+    local SFclusterHeight = Minimap:GetHeight() * Minimap:GetScale()
 
-local clusterWidth = MinimapCluster:GetWidth() * MinimapCluster:GetScale()
-local clusterHeight = MinimapCluster:GetHeight() * MinimapCluster:GetScale()
+    local SFwidthScale = SFframeWidth / SFclusterWidth
+    local SFheightScale = SFframeHeight / SFclusterHeight
 
-local widthScale = frameWidth / clusterWidth
-local heightScale = frameHeight / clusterHeight
+    local SFstyleFrame = CreateFrame("Frame", nil, Minimap)
+    SFstyleFrame:SetPoint("CENTER", Minimap, "BOTTOM")
+
+    SFstyleFrame:SetSize(SFclusterWidth * SFwidthScale, SFclusterHeight * SFheightScale)
+
+
+    local frameWidth = 49 -- replace with the actual width of your frame
+    local frameHeight = 23 -- replace with the actual width of your frame
+
+    local clusterWidth = MinimapCluster:GetWidth() * MinimapCluster:GetScale()
+    local clusterHeight = MinimapCluster:GetHeight() * MinimapCluster:GetScale()
+
+    local widthScale = frameWidth / clusterWidth
+    local heightScale = frameHeight / clusterHeight
 
     -- FPS 
-    MinimapFPS = CreateFrame("Button", "FPS", Minimap)
+    MinimapFPS = CreateFrame("Button", "FPS", SFstyleFrame)
     MinimapFPS:Hide()
     MinimapFPS:SetFrameLevel(64)
-    MinimapFPS:SetPoint("TOP", Minimap, "BOTTOM", -48, 0)
+    MinimapFPS:SetPoint("TOP", SFstyleFrame, "BOTTOM", -48, 0)
     MinimapFPS:SetSize(clusterWidth * widthScale, clusterHeight * heightScale)
     -- MinimapFPS:SetWidth(49)
     -- MinimapFPS:SetHeight(23)
@@ -156,25 +171,25 @@ local heightScale = frameHeight / clusterHeight
     end)
     MinimapFPS:SetScript("OnClick", function()
     ReloadUI()
-end)
+    end)
 
-MinimapFPS:SetScript("OnMouseUp", function(self, button)
-    if button == "RightButton" then
-        if AdvancedSettingsGUI:IsShown() then
-            AdvancedSettingsGUI:Hide()
-            HideUIPanel(GameMenuFrame)
-        else
-            AdvancedSettingsGUI:Show()
-            HideUIPanel(GameMenuFrame)
+    MinimapFPS:SetScript("OnMouseUp", function(self, button)
+        if button == "RightButton" then
+            if AdvancedSettingsGUI:IsShown() then
+                AdvancedSettingsGUI:Hide()
+                HideUIPanel(GameMenuFrame)
+            else
+                AdvancedSettingsGUI:Show()
+                HideUIPanel(GameMenuFrame)
+            end
         end
-    end
-end)
+    end)
 
     -- MS
-    MinimapMS = CreateFrame("Frame", "MS", Minimap)
+    MinimapMS = CreateFrame("Frame", "MS", SFstyleFrame)
     MinimapMS:Hide()
     MinimapMS:SetFrameLevel(64)
-    MinimapMS:SetPoint("TOP", Minimap, "BOTTOM", 48, 0)
+    MinimapMS:SetPoint("TOP", SFstyleFrame, "BOTTOM", 48, 0)
     MinimapMS:SetWidth(51)
     MinimapMS:SetHeight(23)
     MinimapMS:SetBackdrop({

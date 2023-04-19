@@ -27,6 +27,10 @@ libs\libdebuff.lua
 libs\libunitscan.lua
 libs\libhealth.lua
 libs\libnameplate.lua
+Libs\CallbackHandler-1.0\CallbackHandler-1.0.xml
+libs\AceAddon-3.0\AceAddon-3.0.xml
+libs\AceDB-3.0\AceDB-3.0.xml
+libs\LibSharedMedia-3.0\lib.xml
 
 # custom
 mods\custom.lua
@@ -52,7 +56,7 @@ mods\camera.lua
 --mods\central-windows.lua  (useless?)
 mods\chat-tweaks-extended.lua 
 mods\cursor-tooltip.lua
-mods\health-numbers-extended.lua
+--mods\health-numbers-extended.lua (causing taint errors, not really working and not really needed)
 mods\hide-combat-tooltip.lua
 mods\hide-unit-frames.lua
 --mods\hide-world-chat.lua (Causing Lua Error. See "Changelog and Notes files in main directory of addon.)
