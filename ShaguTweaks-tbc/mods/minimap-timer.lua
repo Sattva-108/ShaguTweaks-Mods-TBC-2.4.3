@@ -21,7 +21,8 @@ local MTheightScale = MTframeHeight / MTclusterHeight
 local MTstyleFrame = CreateFrame("Frame", nil, Minimap)
 MTstyleFrame:SetPoint("CENTER", Minimap, "BOTTOM")
 
-MTstyleFrame:SetSize(MTclusterWidth * MTwidthScale, MTclusterHeight * MTheightScale)
+MTstyleFrame:SetWidth(MTclusterWidth * MTwidthScale)
+MTstyleFrame:SetHeight(MTclusterHeight * MTheightScale)
 
 
 -- locals for adjusting minimap timer based on minimap scale, width
@@ -41,7 +42,8 @@ MinimapTimer:SetFrameLevel(64)
 
 -- MinimapTimer:SetWidth(width)
 -- MinimapTimer:SetHeight(23)
-MinimapTimer:SetSize(clusterWidth * widthScale, clusterHeight * heightScale)
+MinimapTimer:SetWidth(clusterWidth * widthScale)
+MinimapTimer:SetHeight(clusterHeight * heightScale)
 
 MinimapTimer:SetBackdrop({
   bgFile = "Interface\\Tooltips\\UI-Tooltip-Background",

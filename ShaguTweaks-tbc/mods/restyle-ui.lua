@@ -165,7 +165,9 @@ module.enable = function(self)
         local styleFrame = CreateFrame("Frame", nil, Minimap)
         styleFrame:SetPoint("CENTER", Minimap, "BOTTOM")
 
-        styleFrame:SetSize(clusterWidth * widthScale, clusterHeight * heightScale)
+        styleFrame:SetWidth(clusterWidth * widthScale)
+        styleFrame:SetHeight(clusterHeight * heightScale)
+
 
                 -- Zone Text
                 MinimapZoneTextButton:ClearAllPoints()
@@ -207,7 +209,8 @@ module.enable = function(self)
             TimeManagerClockButton:SetScale(1.2)
             TimeManagerClockButton:DisableDrawLayer("BORDER")
             TimeManagerClockButton:SetNormalTexture("Interface\\Tooltips\\UI-Tooltip-Background")
-            TimeManagerClockButton:SetSize(37, 13)
+            TimeManagerClockButton:SetWidth(37)
+            TimeManagerClockButton:SetHeight(13)
             -- Change background color
             TimeManagerClockButton:GetNormalTexture():SetVertexColor(0, 0, 0)
             TimeManagerClockButton:GetNormalTexture():SetAlpha(0.5)
@@ -226,7 +229,8 @@ module.enable = function(self)
         -- ShaguTweaks-Mods timer
         if MinimapTimer then
             -- removeBackdrop(MinimapTimer)
-            MinimapTimer:SetSize(clusterWidth * widthScale + 5, clusterHeight * heightScale)
+            MinimapTimer:SetWidth(clusterWidth * widthScale + 5)
+            MinimapTimer:SetHeight(clusterHeight * heightScale)
         end
 
         -- -- ShaguTweaks-Mods fps
@@ -260,9 +264,17 @@ module.enable = function(self)
             Minimap:SetScript("OnMouseUp", function(self, button)
 
                 if button == "RightButton"  then
-                    ToggleDropDownMenu(1, nil, MiniMapTrackingDropDown, self)
+                    MiniMapTrackingDropDown:SetScript("OnShow", function(self)
+                        local x, y = GetCursorPosition()
+                        self:SetPoint("TOPLEFT", UIParent, "BOTTOMLEFT", x, y)
+                    end)
+                    ToggleDropDownMenu(1, nil, MiniMapTrackingDropDown, "cursor", -3, -3)
                 elseif button == "MiddleButton" then
-                    ToggleFrame(WorldMapFrame)
+                    if not WorldMapFrame:IsShown() then
+                        ShowUIPanel(WorldMapFrame);
+                    else
+                        HideUIPanel(WorldMapFrame);    
+                    end
                 elseif button == "LeftButton" then
                     Minimap_OnClick(self)
                 end

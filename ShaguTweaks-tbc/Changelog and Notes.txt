@@ -1,8 +1,12 @@
+Changelog by Sattva 24th April 2023 #6;
+- General: Fixed addon lua errors when loaded without compatibility and libstub libs.
+- Restyle-UI: Right-click on minimap will now properly open a tracking button at mouse cursor.
+
 Changelog by Sattva 19th April 2023 #5;
 - Hide-Unit-Frames fixed combat-protected taint errors by using SetAlpha() method instead frame:Hide() or frame:Show()
 - Hide-Unit-Frames can now see Player and Pet frame on mouseover if its hidden.
 - Minimap Timer, FPS, MS frames are not attached to custom frame to avoid MinimapButtonBag-like addons hooking these "buttons" into their bag.
-- Added missing libs for improved castbar to work without any other addons.
+- Improved Castbar: Added missing libs to work without any other addons.
 
 Changelog by Sattva 11th April 2023 #4;
 - You can now left-click framerate to ReloadUI and Right-click to launch ShaguTweaks configuration panel.
@@ -26,10 +30,9 @@ Changelog by Sattva 9th April 2023 #1;
 
 
 
-	TODO List:
+TODO List:
 
 High Prio:
-
 Look if something can be done to fix enemy tooltip getting stuck sometimes. (Might be 2.4.3 Client behaviour)
 Add /slash commands to customise cast bar (for those who want to disable timer/latencybox/keep blizzard texture border/remove icon) 
 Add Minimap Button bag panel ElvUI-WotLK like

@@ -95,7 +95,8 @@ module.enable = function(self)
     local SFstyleFrame = CreateFrame("Frame", nil, Minimap)
     SFstyleFrame:SetPoint("CENTER", Minimap, "BOTTOM")
 
-    SFstyleFrame:SetSize(SFclusterWidth * SFwidthScale, SFclusterHeight * SFheightScale)
+    SFstyleFrame:SetWidth(SFclusterWidth * SFwidthScale)
+    SFstyleFrame:SetHeight(SFclusterHeight * SFheightScale)
 
 
     local frameWidth = 49 -- replace with the actual width of your frame
@@ -112,7 +113,8 @@ module.enable = function(self)
     MinimapFPS:Hide()
     MinimapFPS:SetFrameLevel(64)
     MinimapFPS:SetPoint("TOP", SFstyleFrame, "BOTTOM", -48, 0)
-    MinimapFPS:SetSize(clusterWidth * widthScale, clusterHeight * heightScale)
+    MinimapFPS:SetWidth(clusterWidth * widthScale)
+    MinimapFPS:SetHeight(clusterHeight * heightScale)
     -- MinimapFPS:SetWidth(49)
     -- MinimapFPS:SetHeight(23)
     MinimapFPS:SetBackdrop({

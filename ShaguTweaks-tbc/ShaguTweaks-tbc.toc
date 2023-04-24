@@ -20,6 +20,7 @@ helpers.lua
 config.lua
 
 # libraries
+libs\LibStub\LibStub.lua
 libs\libtipscan.lua
 libs\libspell.lua
 libs\libcast.lua
