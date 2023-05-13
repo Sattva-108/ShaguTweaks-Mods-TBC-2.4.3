@@ -109,7 +109,13 @@ module.enable = function(self)
     local heightScale = frameHeight / clusterHeight
 
     -- FPS 
-    MinimapFPS = CreateFrame("Button", "FPS", SFstyleFrame)
+    MinimapFPS = CreateFrame("Button", "FPS", SFstyleFrame, "SecureActionButtonTemplate")
+
+    --===== Add Right Click to ReloadUI() to avoid taint error =====--
+    MinimapFPS:RegisterForClicks("RightButtonUp")
+    MinimapFPS:SetAttribute("type", "macro")
+    MinimapFPS:SetAttribute("macrotext", "/rl")
+
     MinimapFPS:Hide()
     MinimapFPS:SetFrameLevel(64)
     MinimapFPS:SetPoint("TOP", SFstyleFrame, "BOTTOM", -48, 0)
@@ -163,20 +169,21 @@ module.enable = function(self)
         GameTooltip:AddDoubleLine("High", highFPS.." fps", 1,1,1,1,1,1)
         GameTooltip:AddDoubleLine("Low", lowFPS.." fps", 1,1,1,1,1,1)
         GameTooltip:AddLine("  ", 1, 1, 1, true)
-        GameTooltip:AddLine("|cffeda55fClick|r |cff99ff00to reload UI.|r")
-        GameTooltip:AddLine("|cffeda55fRight-Click|r |cff99ff00to show settings.|r")
+        GameTooltip:AddLine("|cffeda55fClick|r |cff99ff00to show settings.|r")
+        GameTooltip:AddLine("|cffeda55fRight-Click|r |cff99ff00to reload UI.|r")
         GameTooltip:Show()
     end)
 
     MinimapFPS:SetScript("OnLeave", function()
         GameTooltip:Hide()
     end)
-    MinimapFPS:SetScript("OnClick", function()
-    ReloadUI()
-    end)
+
+    -- MinimapFPS:SetScript("OnClick", function()
+    -- ReloadUI()
+    -- end)
 
     MinimapFPS:SetScript("OnMouseUp", function(self, button)
-        if button == "RightButton" then
+        if button == "LeftButton" then
             if AdvancedSettingsGUI:IsShown() then
                 AdvancedSettingsGUI:Hide()
                 HideUIPanel(GameMenuFrame)
@@ -186,6 +193,10 @@ module.enable = function(self)
             end
         end
     end)
+
+
+
+
 
     -- MS
     MinimapMS = CreateFrame("Frame", "MS", SFstyleFrame)

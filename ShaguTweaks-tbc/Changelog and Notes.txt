@@ -1,3 +1,6 @@
+Changelog by Sattva 13th May 2023 #7;
+- Minimap FPS & MS: Swap Reload UI on FPS button to right click.
+
 Changelog by Sattva 24th April 2023 #6;
 - General: Fixed addon lua errors when loaded without compatibility and libstub libs.
 - Restyle-UI: Right-click on minimap will now properly open a tracking button at mouse cursor.
