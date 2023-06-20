@@ -12,41 +12,17 @@ These mods aim to preserve the spirit of the default UI while providing modern q
 - Code from [zUI](https://github.com/Ko0z/zUI)
 - Credit to [GryllsAddons](https://github.com/GryllsAddons)
 - Code from [ShaguTweaks-Mods](https://github.com/GryllsAddons/ShaguTweaks-Mods) 
-- Special Thanks to [Macumba](https://github.com/Macumbafeh/) for inspiring me.
 
 ## Installation / Updating
 
-1. Install [ShaguTweaks-tbc](https://github.com/shagu/ShaguTweaks/archive/master.zip) if not yet installed :warning: Don't forget to rename `ShaguTweaks-master` folder to `ShaguTweaks-tbc` :warning:
-1. Download [ShaguTweaks-Mods](https://github.com/Sattva-108/ShaguTweaks-Mods-TBC-2.4.3/archive/refs/heads/main.zip)
-1. Copy the `ShaguTweaks-tbc` folder within the `ShaguTweaks-Mods-TBC-2.4.3-main` folder inside the .zip to `\Interface\AddOns\`  
+1. Copy the "ShaguTweaks-tbc" folder within the "ShaguTweaks-Mods-TBC-2.4.3-main" folder inside the .zip to "\Interface\AddOns\".    
 2. Replace/overwrite any existing files when copying.
 3. Enable the mod(s) by selecting them in the ShaguTweaks menu (Esc > Advanced Options).
-#### :exclamation: `IMPORTANT` :exclamation: When updating the `ShaguTweaks-tbc` addon, don't overwrite the `.toc` file supplied inside the `ShaguTweaks-tbc` folder.
+4. When updating the ShaguTweaks addon, don't overwrite the .toc file supplied inside the "ShaguTweaks" folder.
 
 ### Optional Portrait Class Icons - Install
-The download contains an optional image file containing alternative high resolution unitframe class icons `UI-Classes-Circles.tga`
-Copy this file to the img folder located in `\Interface\AddOns\ShaguTweaks-tbc\img`
-
-#### `Changelog`, `To Do List` and `known bugs` can be viewed in [Changelog and Notes.txt](https://github.com/Sattva-108/ShaguTweaks-Mods-TBC-2.4.3/blob/main/ShaguTweaks-tbc/Changelog%20and%20Notes.txt) inside addon folder.
-
-## Screenshots
-
-![restyleUI-minimap](https://user-images.githubusercontent.com/74269253/231318857-9ab2540f-8fc9-4b5f-9efe-87c3302ac918.gif)
-
-**Restyle-UI + Minimap Tweaks - tweaks for minimap, timer and framerate**
-
-![Energy Tick](https://user-images.githubusercontent.com/74269253/226327312-f21577d1-2cce-4501-bf46-999d92fdf64c.png)
-
-*Energy/Mana Tick*
-
-![preview](https://raw.githubusercontent.com/GryllsAddons/AddonPreviews/main/ShaguTweaks-Mods/ST_TooltipCursor.png)  
-*Cursor Tooltip*
-
-![preview](https://raw.githubusercontent.com/GryllsAddons/AddonPreviews/main/ShaguTweaks-Mods/ST_LootMonitor3.png)  
-*Loot Monitor*
-
-![preview](https://raw.githubusercontent.com/GryllsAddons/AddonPreviews/main/ShaguTweaks-Mods/ST_Roll2.png)  
-*Improved Roll Frames*
+The download contains an optional image file containing alternative high resolution unitframe class icons (UI-Classes-Circles.tga).    
+Copy this file to the img folder located in "\Interface\AddOns\ShaguTweaks-tbc\img"
 
 ## Mods
 
@@ -55,23 +31,6 @@ Copy this file to the img folder located in `\Interface\AddOns\ShaguTweaks-tbc\i
 
 - **Unit Frame Energy & Mana Tick**    
 *Adds an energy & mana tick to the player frame.*
-
-- **MiniMap Framerate & Latency**    
-*Adds a small framerate & latency display to the mini map.* - :speech_balloon:**Tweaked by RestyleUI.**
-
-- **MiniMap Timer**    
-*Adds a togglable timer to the minimap clock.* - :speech_balloon:**Tweaked by RestyleUI.** <br>
-*Left click the clock to toggle the timer, left click the timer to start/pause or right click to reset.*
-
-- **Restyle UI**    
-*Restyles and adds more functionality to minimap, framerate frame, timer, clock, buffs, buttons, minimap and unit names.*    
-*If you are using MinimapButtonBag addon the MinimapButtonBag button will be repositioned to the bottom left of the minimap and will shown on mouseover.*
-
-- **Skip Gossip Text**    
-*Automatically skips some gossips (for example trainer.)* :speech_balloon:**Hold Shift key when interracting with NPC to cancel automation.**
-
-- **Accept Group Invites**    
-*Automatically accepts group invites from friends / guildies*
 
 - **Hide Hotkey Text**    
 *Hides the hotkeys on the action bars.*
@@ -124,6 +83,17 @@ Copy this file to the img folder located in `\Interface\AddOns\ShaguTweaks-tbc\i
 *Items looted over 1 minute ago will be shown at 50% transparency.*    
 *Items looted over 10 minutes ago will be shown at 25% transparency.*
 
+- **MiniMap Framerate & Latency**    
+*Adds a small framerate & latency display to the mini map.*
+
+- **MiniMap Timer**    
+*Adds a togglable timer to the minimap clock.*    
+*Left click the clock to toggle the timer, left click the timer to start or right click to reset.*
+
+- **Restyle UI**    
+*Restyles supported addons, buffs, buttons, minimap and unit names.*    
+*If you are using MinimapButtonBag addon the MinimapButtonBag button will be repositioned to the bottom left of the minimap and will shown on mouseover.*
+
 - **Unit Frame Healthbar Colors**    
 *Changes the unitframe and nameplate healthbar color when at 20% health or lower.*
 
@@ -133,3 +103,26 @@ Copy this file to the img folder located in `\Interface\AddOns\ShaguTweaks-tbc\i
 - **WorldMap Reveal**    
 *Reveals unexplored areas on the world map.*    
 
+## Screenshots
+
+![Energy Tick](https://user-images.githubusercontent.com/74269253/226327312-f21577d1-2cce-4501-bf46-999d92fdf64c.png)
+
+*Energy/Mana Tick*
+
+![preview](https://raw.githubusercontent.com/GryllsAddons/AddonPreviews/main/ShaguTweaks-Mods/ST_TooltipCursor.png)  
+*Cursor Tooltip*
+
+![preview](https://raw.githubusercontent.com/GryllsAddons/AddonPreviews/main/ShaguTweaks-Mods/ST_LootMonitor3.png)  
+*Loot Monitor*
+
+![preview](https://raw.githubusercontent.com/GryllsAddons/AddonPreviews/main/ShaguTweaks-Mods/ST_FPSMS2.png)  
+*MiniMap Framerate & Latency*
+
+![preview](https://raw.githubusercontent.com/GryllsAddons/AddonPreviews/main/ShaguTweaks-Mods/ST_Roll1.png)  
+*Improved Roll Frames*
+
+![preview](https://raw.githubusercontent.com/GryllsAddons/AddonPreviews/main/ShaguTweaks-Mods/ST_Roll2.png)  
+*Improved Roll Frames*
+
+![preview](https://raw.githubusercontent.com/GryllsAddons/AddonPreviews/main/ShaguTweaks-Mods/ST_UIRestyle.png)  
+*Restyle UI + Minimap Tweaks*
