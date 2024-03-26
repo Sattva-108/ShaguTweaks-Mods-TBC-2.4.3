@@ -1,4 +1,9 @@
 # ShaguTweaks-Mods
+
+## Support
+- Show **Love and Support** my goals **[Boosty](https://boosty.to/sattva108)**
+
+## What it does
 Adds additional TBC 2.4.3 custom mods to the [ShaguTweaks-tbc](https://shagu.org/ShaguTweaks/) addon.    
 These mods aim to preserve the spirit of the default UI while providing modern quality of life features.
 
